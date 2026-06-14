@@ -1,0 +1,97 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Layout & Courtyard Flow | Ellamin Courtyard Retreat" description="Understand the inferred guest flow across the pool, house frontage, gazebo, pergola, BBQ bay, lawn, parking, and interior placeholder zones.">
+  <section class="v3-band pb-12">
+    <div class="v3-container">
+      <div class="v3-split">
+        <div>
+          <p class="v3-eyebrow">Compound layout</p>
+          <h1 class="v3-section-title mt-3 font-display">One courtyard, several clear zones.</h1>
+        </div>
+        <p class="text-[1.02rem] leading-8 text-[color:var(--muted)]">
+          This layout is inferred from the exterior photos. It is a guest-facing mockup, not an architectural plan. It makes the decision easier by showing where guests gather, swim, eat, park, and enter the house.
+        </p>
+      </div>
+
+      <div class="mt-10 v3-photo-grid">
+        <figure class="v3-media-frame aspect-[16/10]">
+          <img class="v3-theme-day" src="/images/ellamin-courtyard-day-main.png" alt="Daytime view showing Ellamin Courtyard pool, lawn, pergola, gazebo, and BBQ bay" loading="eager" />
+          <img class="v3-theme-night" src="/images/ellamin-courtyard-night-front.png" alt="Night view showing Ellamin Courtyard house frontage, pool, pergola, and lit pathway" loading="eager" />
+          <figcaption class="v3-media-label">Main orientation: pool at front-left, house and porch center, BBQ bay right</figcaption>
+        </figure>
+        <div class="grid gap-3">
+          <figure class="v3-media-frame min-h-[220px]">
+            <img src="/images/ellamin-courtyard-family-day.png" alt="Family day use of lawn, pool, and shaded dining areas" loading="lazy" />
+            <figcaption class="v3-media-label">Family-day flow: adults can gather while children swim under supervision</figcaption>
+          </figure>
+          <figure class="v3-media-frame min-h-[220px]">
+            <img src="/images/ellamin-courtyard-rain-sunset.png" alt="Rain and sunset view of the pool and covered dining zone" loading="lazy" />
+            <figcaption class="v3-media-label">Covered zones stay useful during rain or evening use</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-20">
+    <div class="v3-container">
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-12">
+        <div class="lg:col-span-4">
+          <p class="v3-eyebrow">Inferred zone map</p>
+          <h2 class="v3-section-title mt-3 font-display">How the space works.</h2>
+          <p class="mt-4 leading-7 text-[color:var(--muted)]">
+            The page should communicate spatial logic before guests ask the host. Interior rooms remain placeholder until real interior photos are available.
+          </p>
+        </div>
+        <div class="lg:col-span-8">
+          <div class="v3-zone-map">
+            <div class="v3-zone v3-zone-pool">
+              <p class="v3-eyebrow">Wet zone</p>
+              <strong>Private pool and deck</strong>
+              <p>Primary emotional anchor. Best shown with day and night photos because the mood changes materially.</p>
+            </div>
+            <div class="v3-zone-column">
+              <div class="v3-zone">
+                <strong>House frontage</strong>
+                <p>Entry porch, sliding doors, and covered transition between indoor rest and outdoor gathering.</p>
+              </div>
+              <div class="v3-zone">
+                <strong>Pergola and lawn</strong>
+                <p>Dry social zone for seated adults, children nearby, and photo-friendly family day setup.</p>
+              </div>
+              <div class="v3-zone">
+                <strong>Gazebo and BBQ bay</strong>
+                <p>Food prep, shaded dining, charcoal grill, and practical event staging along the right edge.</p>
+              </div>
+              <div class="v3-zone">
+                <strong>Interior placeholder</strong>
+                <p>Two bedrooms, bathrooms, living, and kitchen should be replaced with real interior proof later.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-24">
+    <div class="v3-container">
+      <div class="v3-logistics">
+        <article class="v3-card">
+          <strong>Vehicle planning</strong>
+          <p>Keep one host-confirmed parking fact visible, then explain overflow/visitor parking only after it is verified.</p>
+        </article>
+        <article class="v3-card">
+          <strong>Supervision sightline</strong>
+          <p>The photos show adults can sit in shaded areas while keeping the pool and lawn within view.</p>
+        </article>
+        <article class="v3-card">
+          <strong>Rain and night readiness</strong>
+          <p>Evening/rain photos prove the covered dining bay and warm pool lighting are not just daytime promises.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+</Layout>

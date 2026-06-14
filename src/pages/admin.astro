@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro';
+import AdminConsole from '../components/AdminConsole';
+import { PROPERTY_APP_CONFIG } from '../data/propertyStore';
+---
+
+<Layout title="Administrative Portal | Ellamin Courtyard Retreat" description="Maintain calendar listings, check blocked dates, manage incoming guest requests, adjust nightly stay rates, and check system diagnostics.">
+  <section class="v3-band pb-12">
+    <div class="v3-container">
+      <div class="mb-7">
+        <p class="v3-eyebrow">Operator Spine</p>
+        <h2 class="v3-section-title mt-3 font-display">Operator Console</h2>
+        <p class="mt-4 text-[color:var(--muted)] max-w-2xl leading-relaxed">
+          Maintain calendar listings, check blocked dates, manage incoming guest requests, adjust nightly stay rates, and check system diagnostics.
+        </p>
+      </div>
+
+      <!-- Admin Console React Island -->
+      <div class="mt-10">
+        <AdminConsole client:load seedConfig={PROPERTY_APP_CONFIG} />
+      </div>
+    </div>
+  </section>
+</Layout>

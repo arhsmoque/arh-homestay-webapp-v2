@@ -1,0 +1,109 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Ceremonies & Small Events | Ellamin Courtyard Retreat" description="Review event hosting constraints, guest counts, and noise curfews before inquiring.">
+  <section class="v3-band pb-12">
+    <div class="v3-container">
+      <div class="mb-7">
+        <p class="v3-eyebrow">Occasions</p>
+        <h2 class="v3-section-title mt-3 font-display">Small Events & Ceremonies</h2>
+        <p class="mt-4 text-[color:var(--muted)] max-w-2xl leading-relaxed">
+          Review event hosting constraints, guest counts, and noise curfews before inquiring.
+        </p>
+      </div>
+
+      <!-- Suitability Guidelines -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+        <div class="v3-card p-8 flex flex-col justify-between gap-6">
+          <div>
+            <h3 class="font-display text-2xl font-bold text-[color:var(--ink)]">Capacity & Visitor Rules</h3>
+            <p class="text-sm text-[color:var(--muted)] mt-2 leading-relaxed">
+              While only 6 guests may sleep overnight, we allow day-visitors for small gatherings under these limits:
+            </p>
+            <ul class="text-xs text-[color:var(--muted)] mt-4 flex flex-col gap-2 list-disc pl-5">
+              <li><strong>Max Visitors:</strong> 20 total daytime guests (including overnight guests).</li>
+              <li><strong>Overnight Restrictions:</strong> Strictly 6 sleeping guests. Extra visitors must leave by 10:00 PM.</li>
+              <li><strong>Event Approval:</strong> All events require prior registration and owner approval.</li>
+            </ul>
+          </div>
+          <div class="p-4 border-l-4 border-[color:var(--clay-action)] bg-[color:var(--warm)]/40 rounded-r-lg">
+            <p class="text-[10px] uppercase font-bold text-[color:var(--clay-action)]">Important Note</p>
+            <p class="text-xs text-[color:var(--ink)] mt-1">
+              Commercial events with ticket sales or public entry are strictly prohibited.
+            </p>
+          </div>
+        </div>
+
+        <div class="v3-card p-8 flex flex-col justify-between gap-6">
+          <div>
+            <h3 class="font-display text-2xl font-bold text-[color:var(--ink)]">Noise & Curfew Policies</h3>
+            <p class="text-sm text-[color:var(--muted)] mt-2 leading-relaxed">
+              Our property is part of a quiet coastal neighborhood. To keep the community friendly, we enforce the following:
+            </p>
+            <ul class="text-xs text-[color:var(--muted)] mt-4 flex flex-col gap-2 list-disc pl-5">
+              <li><strong>Curfew:</strong> Outside noise, music, or pool usage must end by 10:00 PM.</li>
+              <li><strong>Sound Systems:</strong> Amplified sound bars or DJ mixers are not allowed outside. Small portable bluetooth speakers are fine if kept low.</li>
+              <li><strong>Security Deposit:</strong> Event bookings require an event security deposit of RM 500.</li>
+            </ul>
+          </div>
+          <div class="p-4 border-l-4 border-[color:var(--gold)] bg-[color:var(--warm)]/40 rounded-r-lg">
+            <p class="text-[10px] uppercase font-bold text-[color:var(--gold)]">Violation Penalty</p>
+            <p class="text-xs text-[color:var(--ink)] mt-1">
+              Fines apply and deposit may be forfeit for sound complaints after 10:00 PM.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Event Packages -->
+  <section class="pb-16">
+    <div class="v3-container flex flex-col gap-6">
+      <h3 class="font-display text-[clamp(31px,4vw,48px)] font-black leading-none text-[color:var(--ink)] text-center">Available Packages</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="v3-card p-6 flex flex-col justify-between gap-4">
+          <div>
+            <h4 class="font-display text-xl font-bold text-[color:var(--ink)]">Backyard Ceremony Package</h4>
+            <p class="text-xs text-[color:var(--muted)] mt-1 leading-relaxed">
+              Includes access to the gazebo, grass lawn setup space, and permission for up to 20 daytime guests.
+            </p>
+          </div>
+          <div class="flex justify-between items-center pt-4 border-t border-[color:var(--line)]">
+            <span class="text-xs font-bold text-[color:var(--muted)]">Rates Factor</span>
+            <strong class="text-[color:var(--clay-action)] text-sm">Add RM 150 Event Surcharge</strong>
+          </div>
+        </div>
+
+        <div class="v3-card p-6 flex flex-col justify-between gap-4">
+          <div>
+            <h4 class="font-display text-xl font-bold text-[color:var(--ink)]">Corporate Team Building</h4>
+            <p class="text-xs text-[color:var(--muted)] mt-1 leading-relaxed">
+              Provides early 12:00 PM check-in for event coordination, access to projection resources, and outdoor table setup layouts.
+            </p>
+          </div>
+          <div class="flex justify-between items-center pt-4 border-t border-[color:var(--line)]">
+            <span class="text-xs font-bold text-[color:var(--muted)]">Rates Factor</span>
+            <strong class="text-[color:var(--clay-action)] text-sm">Add RM 200 Event Surcharge</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Handoff CTA -->
+  <section class="pb-24">
+    <div class="v3-container">
+      <div class="v3-final">
+        <div>
+          <h4 class="font-display text-[clamp(31px,4vw,48px)] font-black leading-none">Planning an event?</h4>
+          <p class="mt-3 leading-relaxed text-[#dfc184]">Inquire using our event mode to specify guest counts and decoration requirements.</p>
+        </div>
+        <a href="/book" class="v3-button bg-white text-[color:var(--clay-action)] hover:bg-[color:var(--warm)] whitespace-nowrap">
+          Ask Event Package
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

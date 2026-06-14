@@ -1,0 +1,101 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { PROPERTY_APP_CONFIG } from '../data/propertyStore';
+
+const p = PROPERTY_APP_CONFIG.seed.property.profile;
+const cards = Object.values(PROPERTY_APP_CONFIG.seed.property.cards).filter(c => c.type === 'room');
+---
+
+<Layout title="Stay & Sleeping Arrangements | Ellamin Courtyard Retreat" description="View the rooms, beds, and sleeping configuration of Ellamin Courtyard Retreat to confirm fit for your group before you book.">
+  <section class="v3-band pb-12">
+    <div class="v3-container">
+      <div class="mb-7">
+        <p class="v3-eyebrow">Fit & Capacity</p>
+        <h2 class="v3-section-title mt-3 font-display">Rooms & Sleeping Arrangements</h2>
+        <p class="mt-4 text-[color:var(--muted)] max-w-2xl leading-relaxed">
+          Confirm whether our layout fits your group size. We strictly support up to {p.maxGuests} guests to preserve comfort.
+        </p>
+      </div>
+
+      <!-- Capacity Overview Grid -->
+      <div class="v3-logistics mt-10">
+        <article class="v3-card">
+          <div class="flex items-center gap-3">
+            <span class="text-2xl" aria-hidden="true">👥</span>
+            <strong>Max Guests</strong>
+          </div>
+          <p class="mt-3 text-lg font-[850] text-[color:var(--deep-pool)]">{p.maxGuests} Guests overnight</p>
+        </article>
+        <article class="v3-card">
+          <div class="flex items-center gap-3">
+            <span class="text-2xl" aria-hidden="true">🛏️</span>
+            <strong>Beds</strong>
+          </div>
+          <p class="mt-3 text-lg font-[850] text-[color:var(--deep-pool)]">{p.beds}</p>
+        </article>
+        <article class="v3-card">
+          <div class="flex items-center gap-3">
+            <span class="text-2xl" aria-hidden="true">🚪</span>
+            <strong>Space Structure</strong>
+          </div>
+          <p class="mt-3 text-lg font-[850] text-[color:var(--deep-pool)]">{p.bedrooms} Rooms / {p.bathrooms} Baths</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bedroom Breakdown -->
+  <section class="pb-16">
+    <div class="v3-container">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {cards.map((card, idx) => (
+          <div key={card.id || idx} class="v3-card overflow-hidden flex flex-col justify-between">
+            <div class="h-64 overflow-hidden relative bg-[color:var(--warm)]">
+              <img 
+                src={idx === 0 
+                  ? "https://images.unsplash.com/photo-1615873968403-89e068629265?auto=format&fit=crop&w=800&q=80" 
+                  : "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+                } 
+                alt={card.title} 
+                class="w-full h-full object-cover filter saturate-[0.94] contrast-[0.96]"
+              />
+              <span class="absolute top-3 left-3 bg-[color:var(--deep-pool)] text-white text-[10px] font-black uppercase px-2.5 py-1 rounded">
+                {card.title}
+              </span>
+            </div>
+            <div class="p-6 flex-grow flex flex-col justify-between gap-4">
+              <div>
+                <h4 class="font-display text-2xl font-bold text-[color:var(--ink)]">{card.title}</h4>
+                <p class="mt-2 text-[color:var(--muted)] text-sm leading-relaxed">{card.description}</p>
+              </div>
+              
+              <div class="grid grid-cols-2 gap-2 pt-4 border-t border-[color:var(--line)] text-xs font-bold text-[color:var(--muted)]">
+                <div class="flex items-center gap-1.5">❄️ Air Conditioner</div>
+                <div class="flex items-center gap-1.5">🛏️ Queen Bed</div>
+                <div class="flex items-center gap-1.5">👔 Wardrobe Storage</div>
+                <div class="flex items-center gap-1.5">🚿 Adjacent Bathroom</div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking CTA Banner -->
+  <section class="pb-24">
+    <div class="v3-container">
+      <div class="v3-final">
+        <div>
+          <h4 class="font-display text-[clamp(31px,4vw,48px)] font-black leading-none">Have a larger group?</h4>
+          <p class="mt-3 leading-relaxed text-[#dfc184]">
+            Due to municipal and layout rules, we restrict capacity to {p.maxGuests} guests max. Check with host Adrian via WhatsApp if you need clarification on guest combinations (infants, helper staff).
+          </p>
+        </div>
+        <a href="/book" class="v3-button bg-white text-[color:var(--deep-pool)] hover:bg-[color:var(--warm)] whitespace-nowrap">
+          Confirm Dates & Fit
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

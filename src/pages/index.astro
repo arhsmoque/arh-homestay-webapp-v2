@@ -1,0 +1,192 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { PROPERTY_APP_CONFIG } from '../data/propertyStore';
+
+const p = PROPERTY_APP_CONFIG.seed.property.profile;
+const weekdayRate = PROPERTY_APP_CONFIG.seed.rates.plans.weekday.price;
+---
+
+<Layout title="Ellamin Courtyard Retreat | Private Pool Homestay near Morib" description="A private pool homestay near Morib and Banting for family stays, family day gatherings, BBQ, small events, and direct WhatsApp inquiries.">
+  <section class="v3-hero">
+    <div class="v3-hero-media v3-kenburns" aria-hidden="true">
+      <img class="v3-theme-day" src="/images/ellamin-courtyard-day-main.png" alt="" loading="eager" fetchpriority="high" />
+      <img class="v3-theme-night" src="/images/ellamin-courtyard-night-panorama.png" alt="" loading="eager" fetchpriority="high" />
+    </div>
+    <div class="v3-container">
+      <div class="v3-hero-copy">
+        <p class="v3-eyebrow text-[#dfc184]">Morib, Banting private pool stay</p>
+        <h1 class="v3-hero-title">Ellamin Courtyard Retreat</h1>
+        <p class="v3-hero-lede">
+          A real private courtyard homestay for family sleepovers, BBQ pool days, intimate ceremonies, and calm group retreats. See the space, rules, parking, and rate factors before you message the host.
+        </p>
+        <div class="mt-7 flex flex-wrap gap-3">
+          <a href="/book" class="v3-button v3-button-primary bg-white text-[color:var(--deep-pool)] hover:bg-[color:var(--warm)]">Check Availability</a>
+          <a href="/layout" class="v3-button v3-hero-secondary">View Layout</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="v3-container -mt-8 relative z-10">
+    <dl class="v3-proof-row">
+      <div>
+        <dt>Private pool</dt>
+        <dd>Exclusive use</dd>
+      </div>
+      <div>
+        <dt>Sleeping fit</dt>
+        <dd>{p.bedrooms} rooms, {p.beds}</dd>
+      </div>
+      <div>
+        <dt>Group size</dt>
+        <dd>Up to {p.maxGuests} overnight</dd>
+      </div>
+      <div>
+        <dt>Starting rate</dt>
+        <dd>From RM {weekdayRate}</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="v3-band">
+    <div class="v3-container v3-split">
+      <div>
+        <p class="v3-eyebrow">Real exterior proof</p>
+        <h2 class="v3-section-title mt-3">Real photos make the decision feel safe.</h2>
+      </div>
+      <div class="grid gap-5 text-[1.02rem] leading-8 text-[color:var(--muted)]">
+        <p>
+          The first screen uses the actual courtyard, pool, pergola, gazebo, BBQ bay, lawn, and house frontage. Light mode opens with daytime clarity; night mode switches to the illuminated pool ambience.
+        </p>
+        <p>
+          The design now treats every image as proof, not decoration: what guests can use, where adults can sit, how the pool works at night, and why the space suits family days or small gatherings.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-16">
+    <div class="v3-container">
+      <div class="mb-7 flex flex-col justify-between gap-4 md:flex-row md:items-end">
+        <div>
+          <p class="v3-eyebrow">Best for</p>
+          <h2 class="v3-section-title mt-3">Choose by occasion.</h2>
+        </div>
+        <a href="/packages" class="v3-button v3-button-secondary self-start md:self-auto">Compare Packages</a>
+      </div>
+
+      <div class="v3-choice-grid">
+        <a href="/stay" class="v3-card v3-choice">
+          <div>
+            <strong>Family Weekend</strong>
+            <p>Two-bedroom stay, private pool time, kitchen use, and simple check-in details before arrival.</p>
+          </div>
+          <span>Review sleeping fit</span>
+        </a>
+        <a href="/pool" class="v3-card v3-choice">
+          <div>
+            <strong>Family Day</strong>
+            <p>Pool, gazebo, BBQ setup, and supervision rules presented clearly before inquiry.</p>
+          </div>
+          <span>See pool proof</span>
+        </a>
+        <a href="/events" class="v3-card v3-choice">
+          <div>
+            <strong>Small Ceremony</strong>
+            <p>Suitability guidance for akad, engagement, birthday, or relaxed gathering requests.</p>
+          </div>
+          <span>Check event fit</span>
+        </a>
+        <a href="/events" class="v3-card v3-choice">
+          <div>
+            <strong>Team Retreat</strong>
+            <p>A quiet private base for small corporate groups that need privacy more than hotel formality.</p>
+          </div>
+          <span>Ask the host</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="v3-band pt-8">
+    <div class="v3-container v3-feature">
+      <div class="v3-media-frame v3-kenburns min-h-[440px]">
+        <img class="v3-theme-day" src="/images/ellamin-courtyard-day-panorama.png" alt="Daytime panorama of Ellamin Courtyard private pool, gazebo, pergola, BBQ bay, and lawn" loading="lazy" />
+        <img class="v3-theme-night" src="/images/ellamin-courtyard-night-pool.png" alt="Night view of Ellamin Courtyard private pool with warm lighting" loading="lazy" />
+        <span class="v3-media-label">Daytime clarity in light mode; night swim mood in dark mode</span>
+      </div>
+      <article class="v3-card v3-fact-panel">
+        <p class="v3-eyebrow text-[#dfc184]">Signature proof</p>
+        <h2 class="font-display mt-3 text-[clamp(31px,4vw,48px)] font-black leading-none">Private pool, not a shared facility.</h2>
+        <p class="mt-5 leading-7">
+          The pool is the decision anchor. Families and small event groups need to know privacy, supervision, seating, night use, and food setup before they ask about dates.
+        </p>
+        <ul class="v3-fact-list">
+          <li><strong>Exclusive use:</strong> no communal pool schedule or shared deck anxiety.</li>
+          <li><strong>Gathering zones:</strong> pool, covered seating, BBQ area, and indoor rest space are separated.</li>
+          <li><strong>Rules visible early:</strong> children supervised, event noise limits, and host confirmation before deposit.</li>
+        </ul>
+        <a href="/pool" class="v3-button mt-7 bg-white text-[color:var(--deep-pool)] hover:bg-[color:var(--warm)]">Explore Pool Details</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="pb-20">
+    <div class="v3-container">
+      <div class="v3-photo-grid">
+        <figure class="v3-media-frame aspect-[16/10]">
+          <img src="/images/ellamin-courtyard-family-day.png" alt="Family day gathering at Ellamin Courtyard with children swimming and BBQ picnic setup" loading="lazy" />
+          <figcaption class="v3-media-label">Family day proof: pool, lawn, shaded food setup, and house frontage in one frame</figcaption>
+        </figure>
+        <div class="grid gap-3">
+          <figure class="v3-media-frame min-h-[220px]">
+            <img src="/images/ellamin-courtyard-rain-sunset.png" alt="Rainy sunset pool ambience at Ellamin Courtyard" loading="lazy" />
+            <figcaption class="v3-media-label">Rain and sunset ambience</figcaption>
+          </figure>
+          <figure class="v3-media-frame min-h-[220px]">
+            <img src="/images/ellamin-courtyard-night-front.png" alt="Night front view of Ellamin Courtyard pool and house" loading="lazy" />
+            <figcaption class="v3-media-label">Night frontage and pathway lighting</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-20">
+    <div class="v3-container">
+      <div class="mb-7">
+        <p class="v3-eyebrow">Arrival confidence</p>
+        <h2 class="v3-section-title mt-3">The practical details are part of the hospitality.</h2>
+      </div>
+      <div class="v3-logistics">
+        <article class="v3-card">
+          <strong>Parking and access</strong>
+          <p>{p.parking} is shown before inquiry, with arrival and keyless access details handled by WhatsApp after confirmation.</p>
+        </article>
+        <article class="v3-card">
+          <strong>Location clarity</strong>
+          <p>{p.locationLabel} positioning, nearby landmarks, food, shops, and Google Maps action are surfaced before booking pressure.</p>
+        </article>
+        <article class="v3-card">
+          <strong>Rates without games</strong>
+          <p>Starting rate, deposit visibility, weekday/weekend factors, and purpose-based packages reduce vague “DM price” friction.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-24">
+    <div class="v3-container">
+      <div class="v3-final">
+        <div>
+          <p class="v3-eyebrow text-[#dfc184]">Direct host inquiry</p>
+          <h2 class="font-display mt-3 text-[clamp(31px,4vw,48px)] font-black leading-none">Send dates, pax, vehicles, and purpose in one structured message.</h2>
+          <p class="mt-4 leading-7">
+            The goal is not a generic booking grid. The goal is a better first WhatsApp message so the host can confirm suitability, availability, and rate factors quickly.
+          </p>
+        </div>
+        <a href="/book" class="v3-button bg-white text-[color:var(--deep-pool)] hover:bg-[color:var(--warm)]">Start Inquiry</a>
+      </div>
+    </div>
+  </section>
+</Layout>

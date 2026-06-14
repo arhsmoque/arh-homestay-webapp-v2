@@ -1,0 +1,110 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { PROPERTY_APP_CONFIG } from '../data/propertyStore';
+
+const rates = PROPERTY_APP_CONFIG.seed.rates.plans;
+const fees = PROPERTY_APP_CONFIG.seed.rates.fees;
+---
+
+<Layout title="Rates & Packages | Ellamin Courtyard Retreat" description="Review transparent nightly pricing, event surcharges, and refundable deposits before inquiry.">
+  <section class="v3-band pb-12">
+    <div class="v3-container">
+      <div class="mb-7">
+        <p class="v3-eyebrow">Commercial Rates</p>
+        <h2 class="v3-section-title mt-3 font-display">Rates, Fees & Packages</h2>
+        <p class="mt-4 text-[color:var(--muted)] max-w-2xl leading-relaxed">
+          Review transparent nightly pricing, event surcharges, and refundable deposits before inquiry.
+        </p>
+      </div>
+
+      <!-- Pricing Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-10">
+        
+        <!-- Nightly rates card -->
+        <div class="v3-card p-8 flex flex-col gap-6">
+          <h3 class="font-display text-2xl font-bold text-[color:var(--ink)] border-b border-[color:var(--line)] pb-3">Standard Nightly Rates</h3>
+          
+          <div class="flex flex-col gap-4">
+            <div class="flex justify-between items-center">
+              <div>
+                <p class="font-bold text-base text-[color:var(--ink)]">{rates.weekday.label}</p>
+                <p class="text-[10px] text-[color:var(--muted)]">{rates.weekday.note}</p>
+              </div>
+              <strong class="text-xl font-black text-[color:var(--deep-pool)]">RM {rates.weekday.price} <span class="text-xs font-normal">/ night</span></strong>
+            </div>
+
+            <div class="flex justify-between items-center border-t border-[color:var(--line)] pt-4">
+              <div>
+                <p class="font-bold text-base text-[color:var(--ink)]">{rates.weekend.label}</p>
+                <p class="text-[10px] text-[color:var(--muted)]">{rates.weekend.note}</p>
+              </div>
+              <strong class="text-xl font-black text-[color:var(--deep-pool)]">RM {rates.weekend.price} <span class="text-xs font-normal">/ night</span></strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fees & Security deposits -->
+        <div class="v3-card p-8 flex flex-col gap-6">
+          <h3 class="font-display text-2xl font-bold text-[color:var(--ink)] border-b border-[color:var(--line)] pb-3">Fees & Deposits</h3>
+          
+          <div class="flex flex-col gap-4 text-xs text-[color:var(--muted)]">
+            <div class="flex justify-between items-center">
+              <div>
+                <p class="font-bold text-[color:var(--ink)]">Security Deposit</p>
+                <p class="text-[10px] text-[color:var(--muted)]">Refunded within 24h after check-out</p>
+              </div>
+              <strong class="text-sm font-bold text-[color:var(--ink)]">RM {fees.deposit.amount}</strong>
+            </div>
+
+            <div class="flex justify-between items-center border-t border-[color:var(--line)] pt-4">
+              <div>
+                <p class="font-bold text-[color:var(--ink)]">Cleaning Fee</p>
+                <p class="text-[10px] text-[color:var(--muted)]">Included in the nightly rate</p>
+              </div>
+              <strong class="text-sm font-bold text-[color:var(--pool)]">FREE</strong>
+            </div>
+
+            <div class="flex justify-between items-center border-t border-[color:var(--line)] pt-4">
+              <div>
+                <p class="font-bold text-[color:var(--ink)]">Extra Guests</p>
+                <p class="text-[10px] text-[color:var(--muted)]">Strictly no extra beds supported</p>
+              </div>
+              <strong class="text-sm font-bold text-[color:var(--ink)]">NOT SUPPORTED</strong>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Event Packages surcharges -->
+  <section class="pb-24">
+    <div class="v3-container">
+      <div class="v3-card p-8 flex flex-col gap-6">
+        <h3 class="font-display text-2xl font-bold text-[color:var(--ink)]">Occasion & Gathering Surcharges</h3>
+        <p class="text-xs text-[color:var(--muted)] leading-relaxed max-w-xl">
+          Daytime events requiring extra coordinates (decoration, food delivery, tables/chair placement) incur a one-time event surcharge:
+        </p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs font-medium mt-2">
+          <div class="p-4 bg-[color:var(--surface-card)] border border-[color:var(--line)] rounded-xl flex justify-between items-center">
+            <div>
+              <strong class="text-[color:var(--ink)]">Backyard Ceremony Surcharge</strong>
+              <p class="text-[10px] text-[color:var(--muted)] mt-0.5">Allows up to 20 daytime visitors.</p>
+            </div>
+            <strong class="text-[color:var(--clay-action)] font-bold">+ RM 150</strong>
+          </div>
+
+          <div class="p-4 bg-[color:var(--surface-card)] border border-[color:var(--line)] rounded-xl flex justify-between items-center">
+            <div>
+              <strong class="text-[color:var(--ink)]">Corporate Team Surcharge</strong>
+              <p class="text-[10px] text-[color:var(--muted)] mt-0.5">Allows 12:00 PM check-in and projection resources.</p>
+            </div>
+            <strong class="text-[color:var(--clay-action)] font-bold">+ RM 200</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

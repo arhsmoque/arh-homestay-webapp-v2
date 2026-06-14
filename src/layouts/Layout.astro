@@ -1,0 +1,151 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Ellamin Courtyard Retreat - Private Pool Homestay in Banting',
+  description = 'A private pool homestay near Morib and Banting for family stays, family day gatherings, small events, and structured WhatsApp inquiries.'
+} = Astro.props;
+
+const pathname = new URL(Astro.request.url).pathname;
+const isCurrent = (path: string) => pathname === path || pathname === path + '/';
+const navItems = [
+  ['Stay', '/stay'],
+  ['Pool', '/pool'],
+  ['Events', '/events'],
+  ['Layout', '/layout'],
+  ['Gallery', '/gallery'],
+  ['Location', '/location'],
+  ['Packages', '/packages'],
+  ['FAQ', '/faq']
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/images/ellamin-courtyard-day-main.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet" />
+    <script is:inline>
+      const savedTheme = localStorage.getItem('ellamin-theme');
+      if (savedTheme === 'dark' || savedTheme === 'light') {
+        document.documentElement.dataset.theme = savedTheme;
+      }
+    </script>
+    <title>{title}</title>
+  </head>
+  <body class="v3-shell">
+    <header class="v3-site-header sticky top-0 z-40">
+      <div class="v3-container flex h-[74px] items-center justify-between gap-5">
+        <a href="/" class="flex items-center gap-3" aria-label="Ellamin Courtyard home">
+          <span class="grid h-11 w-11 place-items-center rounded-[var(--radius-card)] bg-[color:var(--deep-pool)] text-sm font-[900] text-white">EC</span>
+          <span class="leading-none">
+            <span class="font-display block text-xl font-bold text-[color:var(--ink)]">Ellamin Courtyard</span>
+            <span class="mt-1 block text-xs font-bold uppercase tracking-[0.18em] text-[color:var(--muted)]">Private pool homestay</span>
+          </span>
+        </a>
+
+        <nav class="hidden items-center gap-5 lg:flex" aria-label="Primary navigation">
+          {navItems.map(([label, href]) => (
+            <a href={href} class="v3-nav-link" aria-current={isCurrent(href) ? 'page' : undefined}>{label}</a>
+          ))}
+        </nav>
+
+        <div class="hidden items-center gap-3 sm:flex">
+          <button id="theme-btn" class="v3-theme-toggle" type="button" aria-label="Switch day and night ambience" aria-pressed="false">
+            <span aria-hidden="true">Day</span>
+          </button>
+          <a href="/location" class="v3-button v3-button-secondary">Map</a>
+          <a href="/book" class="v3-button v3-button-primary">Check Dates</a>
+        </div>
+
+        <button id="mobile-menu-btn" class="grid h-11 w-11 place-items-center rounded-[var(--radius-card)] border border-[color:var(--line)] text-2xl font-bold text-[color:var(--deep-pool)] lg:hidden" aria-label="Open menu" aria-expanded="false" type="button">
+          ≡
+        </button>
+      </div>
+      <nav id="mobile-menu" class="v3-mobile-menu border-t border-[color:var(--line)] bg-[color:var(--paper)] px-4 py-4 lg:hidden" data-open="false" aria-label="Mobile navigation">
+        {navItems.map(([label, href]) => (
+          <a href={href} class="py-2 text-base font-bold text-[color:var(--ink)]" aria-current={isCurrent(href) ? 'page' : undefined}>{label}</a>
+        ))}
+        <button id="theme-btn-mobile" class="v3-theme-toggle mt-2 justify-center" type="button" aria-label="Switch day and night ambience" aria-pressed="false">
+          <span aria-hidden="true">Day</span>
+        </button>
+        <a href="/book" class="v3-button v3-button-primary mt-2">Check Dates</a>
+      </nav>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="v3-site-footer py-10 pb-28 sm:pb-10">
+      <div class="v3-container flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
+        <div>
+          <p class="font-display text-2xl font-bold">Ellamin Courtyard Retreat</p>
+          <p class="mt-1 text-sm text-[color:var(--muted)]">Private pool stays, family days, small events, and direct host inquiry.</p>
+        </div>
+        <div class="flex flex-wrap gap-4 text-sm font-bold text-[color:var(--deep-pool)]">
+          <a href="/faq">Rules</a>
+          <a href="/location">Directions</a>
+          <a href="/packages">Rates</a>
+          <a href="/admin">Operator</a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="v3-mobile-cta fixed inset-x-0 bottom-0 z-30 p-3 sm:hidden">
+      <div class="mx-auto flex max-w-md items-center justify-between gap-3">
+        <div>
+          <p class="text-xs font-bold uppercase tracking-[0.14em] text-[color:var(--muted)]">Direct host inquiry</p>
+          <p class="text-sm font-[850] text-[color:var(--deep-pool)]">From RM 200 / night</p>
+        </div>
+        <a href="/book" class="v3-button v3-button-primary min-h-11 px-5">Check Dates</a>
+      </div>
+    </div>
+
+    <script is:inline>
+      const menuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const themeBtns = [document.getElementById('theme-btn'), document.getElementById('theme-btn-mobile')].filter(Boolean);
+      const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+      const currentTheme = () => document.documentElement.dataset.theme || (systemPrefersDark.matches ? 'dark' : 'light');
+      const syncThemeButton = () => {
+        const isDark = currentTheme() === 'dark';
+        themeBtns.forEach((themeBtn) => {
+          themeBtn.setAttribute('aria-pressed', String(isDark));
+          const label = themeBtn.querySelector('span');
+          if (label) label.textContent = isDark ? 'Night' : 'Day';
+        });
+      };
+      syncThemeButton();
+      themeBtns.forEach((themeBtn) => {
+        themeBtn.addEventListener('click', () => {
+          const next = currentTheme() === 'dark' ? 'light' : 'dark';
+          document.documentElement.dataset.theme = next;
+          localStorage.setItem('ellamin-theme', next);
+          syncThemeButton();
+        });
+      });
+      menuBtn?.addEventListener('click', () => {
+        const next = mobileMenu?.dataset.open !== 'true';
+        if (mobileMenu) mobileMenu.dataset.open = String(next);
+        menuBtn.setAttribute('aria-expanded', String(next));
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+import BookingWidget from '../components/BookingWidget';
+import { PROPERTY_APP_CONFIG } from '../data/propertyStore';
+
+const whatsapp = PROPERTY_APP_CONFIG.seed.property.profile.whatsapp;
+---
+
+<Layout title="Check Availability & Inquire | Ellamin Courtyard Retreat" description="Input your preferred dates and guest size. Our engine will check compatibility limits, calculate deposit rates, and build your message.">
+  <section class="v3-band pb-12">
+    <div class="v3-container">
+      <div class="mb-7">
+        <p class="v3-eyebrow">Booking Spine</p>
+        <h2 class="v3-section-title mt-3 font-display">Check Availability</h2>
+        <p class="mt-4 text-[color:var(--muted)] max-w-2xl leading-relaxed">
+          Input your preferred dates and guest size. Our engine will check compatibility limits, calculate deposit rates, and build your message.
+        </p>
+      </div>
+
+      <!-- Booking Widget React Island -->
+      <div class="mt-10">
+        <BookingWidget client:load whatsappNumber={whatsapp} />
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+import GalleryExplorer from '../components/GalleryExplorer';
+import { PROPERTY_APP_CONFIG } from '../data/propertyStore';
+
+const folders = PROPERTY_APP_CONFIG.seed.property.gallery.folders;
+---
+
+<Layout title="Gallery | Ellamin Courtyard Retreat" description="Browse photos and videos of the courtyard, bedrooms, kitchen amenities, and nearby beach spots to verify if our retreat matches your needs.">
+  <section class="v3-band pb-12">
+    <div class="v3-container">
+      <div class="mb-7">
+        <p class="v3-eyebrow">Photo & Video Explorer</p>
+        <h2 class="v3-section-title mt-3 font-display">Explore Our Property</h2>
+        <p class="mt-4 text-[color:var(--muted)] max-w-2xl leading-relaxed">
+          Browse photos and videos of the courtyard, bedrooms, kitchen amenities, and nearby beach spots to verify if our retreat matches your needs.
+        </p>
+      </div>
+
+      <!-- Interactive React Gallery Explorer -->
+      <div class="mt-10">
+        <GalleryExplorer client:load folders={folders} />
+      </div>
+    </div>
+  </section>
+</Layout>
