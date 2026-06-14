@@ -730,7 +730,6 @@ a {
     color: var(--deep-pool);
   }
 
-  .v3-proof-row,
   .v3-choice-grid,
   .v3-logistics {
     grid-template-columns: 1fr;

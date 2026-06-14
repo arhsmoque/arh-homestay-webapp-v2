@@ -27,8 +27,8 @@ export const PROPERTY_APP_CONFIG = {
         "checkIn": "3:00 PM",
         "departure": "12:00 PM",
         "heroImages": {
-          "day": "/images/ellamin-courtyard-day-main.png",
-          "night": "/images/ellamin-courtyard-night-panorama.png"
+          "day": "/images/ellamin-courtyard-day-main.webp",
+          "night": "/images/ellamin-courtyard-night-panorama.webp"
         }
       },
       "gallery": {
@@ -36,7 +36,7 @@ export const PROPERTY_APP_CONFIG = {
           "id": "exterior",
           "title": "Daytime Courtyard Overview",
           "caption": "Actual exterior view showing the private pool, lawn, gazebo, pergola, BBQ bay, and house frontage.",
-          "url": "/images/ellamin-courtyard-day-main.png",
+          "url": "/images/ellamin-courtyard-day-main.webp",
           "visible": true,
           "sortIndex": 10
         },
@@ -64,49 +64,49 @@ export const PROPERTY_APP_CONFIG = {
             "photos": [
               {
                 "id": "ext_day_main",
-                "url": "/images/ellamin-courtyard-day-main.png",
+                "url": "/images/ellamin-courtyard-day-main.webp",
                 "title": "Daytime Courtyard Overview",
                 "caption": "Pool, lawn, gazebo, pergola, BBQ bay, and house frontage in one clear decision photo.",
                 "sortIndex": 10
               },
               {
                 "id": "ext_day_panorama",
-                "url": "/images/ellamin-courtyard-day-panorama.png",
+                "url": "/images/ellamin-courtyard-day-panorama.webp",
                 "title": "Daytime Panorama",
                 "caption": "Wide exterior context for pool, covered dining, house frontage, and courtyard flow.",
                 "sortIndex": 20
               },
               {
                 "id": "ext_family_day",
-                "url": "/images/ellamin-courtyard-family-day.png",
+                "url": "/images/ellamin-courtyard-family-day.webp",
                 "title": "Family Day Use",
                 "caption": "Actual family-day style proof: children swimming, adults dining, BBQ setup, and shaded gathering.",
                 "sortIndex": 30
               },
               {
                 "id": "ext_rain_sunset",
-                "url": "/images/ellamin-courtyard-rain-sunset.png",
+                "url": "/images/ellamin-courtyard-rain-sunset.webp",
                 "title": "Rainy Sunset Pool",
                 "caption": "Evening rain ambience showing pool lighting and covered dining usefulness.",
                 "sortIndex": 40
               },
               {
                 "id": "ext_night_pool",
-                "url": "/images/ellamin-courtyard-night-pool.png",
+                "url": "/images/ellamin-courtyard-night-pool.webp",
                 "title": "Night Pool Lighting",
                 "caption": "Night swim mood with warm pathway lighting and visible house frontage.",
                 "sortIndex": 50
               },
               {
                 "id": "ext_night_panorama",
-                "url": "/images/ellamin-courtyard-night-panorama.png",
+                "url": "/images/ellamin-courtyard-night-panorama.webp",
                 "title": "Night Panorama",
                 "caption": "Full night courtyard panorama with illuminated pool, house, gazebo, pergola, and BBQ bay.",
                 "sortIndex": 60
               },
               {
                 "id": "ext_night_front",
-                "url": "/images/ellamin-courtyard-night-front.png",
+                "url": "/images/ellamin-courtyard-night-front.webp",
                 "title": "Night Front View",
                 "caption": "Front-facing night view showing the pathway, house entry, pool, and pergola.",
                 "sortIndex": 70
