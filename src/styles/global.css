@@ -696,39 +696,7 @@ a {
     width: min(100% - 24px, 1180px);
   }
 
-  .v3-hero {
-    min-height: auto;
-  }
 
-  .v3-hero-media {
-    position: relative;
-    height: 48vh;
-    min-height: 330px;
-    margin-bottom: -1px;
-  }
-
-  .v3-hero-media::after {
-    background: linear-gradient(180deg, rgba(16, 35, 29, 0.02), rgba(16, 35, 29, 0.36));
-  }
-
-  .v3-hero-copy {
-    padding: 28px 0 42px;
-    color: var(--ink);
-  }
-
-  .v3-hero-title {
-    max-width: 9ch;
-  }
-
-  .v3-hero-lede {
-    color: var(--muted);
-  }
-
-  .v3-hero-secondary {
-    border-color: rgba(31, 95, 107, 0.24);
-    background: rgba(255, 252, 247, 0.82);
-    color: var(--deep-pool);
-  }
 
   .v3-choice-grid,
   .v3-logistics {
