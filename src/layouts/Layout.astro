@@ -55,8 +55,8 @@ const navItems = [
         <a href="/" class="flex items-center gap-3" aria-label="Ellamin Courtyard home">
           <span class="grid h-11 w-11 place-items-center rounded-[var(--radius-card)] bg-[color:var(--deep-pool)] text-sm font-[900] text-white">EC</span>
           <span class="leading-none">
-            <span class="font-display block text-xl font-bold text-[color:var(--ink)]">Ellamin Courtyard</span>
-            <span class="mt-1 block text-xs font-bold uppercase tracking-[0.18em] text-[color:var(--muted)]">Private pool homestay</span>
+            <span class="font-display block text-lg sm:text-xl font-bold text-[color:var(--ink)]">Ellamin Courtyard</span>
+            <span class="mt-1 hidden sm:block text-xs font-bold uppercase tracking-[0.18em] text-[color:var(--muted)]">Private pool homestay</span>
           </span>
         </a>
 
@@ -66,25 +66,23 @@ const navItems = [
           ))}
         </nav>
 
-        <div class="hidden items-center gap-3 sm:flex">
+        <div class="flex items-center gap-2 sm:gap-3">
           <button id="theme-btn" class="v3-theme-toggle" type="button" aria-label="Switch day and night ambience" aria-pressed="false">
             <span aria-hidden="true">Day</span>
           </button>
-          <a href="/location" class="v3-button v3-button-secondary">Map</a>
-          <a href="/book" class="v3-button v3-button-primary">Check Dates</a>
+          <div class="hidden items-center gap-2 sm:flex">
+            <a href="/location" class="v3-button v3-button-secondary">Map</a>
+            <a href="/book" class="v3-button v3-button-primary">Check Dates</a>
+          </div>
+          <button id="mobile-menu-btn" class="grid h-11 w-11 place-items-center rounded-[var(--radius-card)] border border-[color:var(--line)] text-2xl font-bold text-[color:var(--deep-pool)] lg:hidden" aria-label="Open menu" aria-expanded="false" type="button">
+            ≡
+          </button>
         </div>
-
-        <button id="mobile-menu-btn" class="grid h-11 w-11 place-items-center rounded-[var(--radius-card)] border border-[color:var(--line)] text-2xl font-bold text-[color:var(--deep-pool)] lg:hidden" aria-label="Open menu" aria-expanded="false" type="button">
-          ≡
-        </button>
       </div>
       <nav id="mobile-menu" class="v3-mobile-menu border-t border-[color:var(--line)] bg-[color:var(--paper)] px-4 py-4 lg:hidden" data-open="false" aria-label="Mobile navigation">
         {navItems.map(([label, href]) => (
           <a href={href} class="py-2 text-base font-bold text-[color:var(--ink)]" aria-current={isCurrent(href) ? 'page' : undefined}>{label}</a>
         ))}
-        <button id="theme-btn-mobile" class="v3-theme-toggle mt-2 justify-center" type="button" aria-label="Switch day and night ambience" aria-pressed="false">
-          <span aria-hidden="true">Day</span>
-        </button>
         <a href="/book" class="v3-button v3-button-primary mt-2">Check Dates</a>
       </nav>
     </header>

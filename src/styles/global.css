@@ -310,7 +310,7 @@ a {
 .v3-hero {
   min-height: calc(100vh - 74px);
   display: grid;
-  align-items: end;
+  align-items: center;
   position: relative;
   overflow: hidden;
   isolation: isolate;
