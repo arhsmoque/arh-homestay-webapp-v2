@@ -1,0 +1,76 @@
+media_taxonomy:
+  hero:
+    role: first impression and property identity
+    examples:
+      - wide pool + house photo
+      - private compound shot
+      - night pool ambience
+  proof:
+    role: hard evidence
+    examples:
+      - bedrooms
+      - bathrooms
+      - kitchen
+      - parking
+      - gate
+      - layout map
+  occasion:
+    role: help visitors imagine use
+    examples:
+      - family day setup
+      - BBQ area
+      - small event setup
+      - corporate retreat setup
+      - akad/engagement corner if available
+  ambience:
+    role: emotional desire
+    examples:
+      - night pool
+      - rain evening
+      - morning compound
+      - cozy living area
+  logistics:
+    role: reduce arrival anxiety
+    examples:
+      - road entrance
+      - gate photo
+      - parking zone
+      - route video
+      - nearby landmark
+  social:
+    role: short-form discovery
+    examples:
+      - 9:16 TikTok pool clip
+      - compound tour
+      - route guide
+      - family day clip
+must_have_media:
+  property_identity:
+    - exterior wide shot
+    - pool wide shot
+    - hero 16:9 image
+  stay:
+    - each bedroom
+    - living hall
+    - kitchen
+    - bathroom if presentable
+  pool:
+    - day pool
+    - night pool
+    - pool surrounding area
+  logistics:
+    - parking
+    - gate
+    - road/arrival clue
+  event:
+    - gathering area
+    - gazebo/pergola
+    - BBQ/food area
+    - layout/top-view
+avoid_media:
+  - over-polished AI-looking photos
+  - repeated same angle
+  - dark photos hiding details
+  - misleading wide-angle exaggeration
+  - guest faces without permission
+  - event photos implying capacity beyond allowed rules

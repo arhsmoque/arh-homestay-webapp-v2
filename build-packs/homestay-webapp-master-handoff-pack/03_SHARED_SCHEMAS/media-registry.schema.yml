@@ -1,0 +1,12 @@
+media_registry_item:
+  id: ''
+  file: ''
+  type: image | video
+  group: hero | pool | room | event | layout | location | route | night | rain | parking
+  alt_text: ''
+  caption: ''
+  page_usage: []
+  featured: true
+  aspect_ratio: 16:9 | 4:3 | 1:1 | 9:16
+  priority: hero | above_fold | normal | lazy
+  permission_status: owned | guest_approved | hidden

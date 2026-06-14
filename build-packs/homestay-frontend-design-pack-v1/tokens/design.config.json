@@ -1,0 +1,148 @@
+{
+  "$schema": "./design.config.schema.json",
+  "version": 2,
+  "themeName": "warm-private-retreat",
+  "surface": "homestay-public-webapp",
+  "designTokens": {
+    "fontFamily": {
+      "display": [
+        "Fraunces",
+        "Georgia",
+        "serif"
+      ],
+      "sans": [
+        "Manrope",
+        "Inter",
+        "system-ui",
+        "sans-serif"
+      ],
+      "mono": [
+        "ui-monospace",
+        "SFMono-Regular",
+        "Menlo",
+        "monospace"
+      ]
+    },
+    "colors": {
+      "raw": {
+        "cloudWhite": "#F7F4EE",
+        "warmCanvas": "#EFE7DA",
+        "softMist": "#E8ECE8",
+        "deepCharcoal": "#20201D",
+        "mutedCharcoal": "#4D4A43",
+        "clayTerracotta": "#B96F4A",
+        "clayAction": "#9E5D3D",
+        "palmOlive": "#66724D",
+        "rattanSand": "#C6A878",
+        "poolTeal": "#2F8F9D",
+        "deepPool": "#1F5F6B",
+        "duskIndigo": "#283145",
+        "warmLamp": "#E4B96F",
+        "success": "#4F7A4F",
+        "warning": "#B8792F",
+        "danger": "#A94438"
+      },
+      "semantic": {
+        "backgroundPage": "cloudWhite",
+        "backgroundWarm": "warmCanvas",
+        "backgroundMist": "softMist",
+        "backgroundEvening": "duskIndigo",
+        "surfaceCard": "#FFFCF7",
+        "surfaceCardWarm": "warmCanvas",
+        "surfaceCardEvening": "#303A50",
+        "textPrimary": "deepCharcoal",
+        "textSecondary": "mutedCharcoal",
+        "textInverse": "#FFFFFF",
+        "borderSubtle": "#DDD2C0",
+        "borderWarm": "rattanSand",
+        "actionPrimary": "deepPool",
+        "actionPrimaryHover": "#184F59",
+        "actionSecondary": "palmOlive",
+        "actionWarm": "clayAction",
+        "focusRing": "warmLamp",
+        "proofPool": "poolTeal",
+        "proofLayout": "palmOlive",
+        "proofEvent": "clayTerracotta",
+        "proofLocation": "deepPool"
+      }
+    },
+    "typeScale": {
+      "displayXl": {
+        "mobile": "42px",
+        "desktop": "72px",
+        "lineHeight": "0.95"
+      },
+      "displayLg": {
+        "mobile": "36px",
+        "desktop": "56px",
+        "lineHeight": "1"
+      },
+      "heading1": {
+        "mobile": "32px",
+        "desktop": "48px",
+        "lineHeight": "1.05"
+      },
+      "heading2": {
+        "mobile": "26px",
+        "desktop": "36px",
+        "lineHeight": "1.12"
+      },
+      "body": {
+        "mobile": "16px",
+        "desktop": "17px",
+        "lineHeight": "1.6"
+      },
+      "small": {
+        "mobile": "14px",
+        "desktop": "14px",
+        "lineHeight": "1.45"
+      }
+    },
+    "spacing": {
+      "sectionYMobile": "48px",
+      "sectionYDesktop": "96px",
+      "cardPaddingMobile": "20px",
+      "cardPaddingDesktop": "28px",
+      "gridGapMobile": "16px",
+      "gridGapDesktop": "24px"
+    },
+    "radius": {
+      "card": "22px",
+      "media": "32px",
+      "button": "999px",
+      "input": "14px",
+      "chip": "999px"
+    },
+    "shadow": {
+      "card": "0 8px 24px rgba(32, 32, 29, 0.08)",
+      "media": "0 18px 48px rgba(32, 32, 29, 0.14)",
+      "floating": "0 16px 36px rgba(32, 32, 29, 0.18)"
+    },
+    "motion": {
+      "speed": "calm",
+      "durationFast": "120ms",
+      "durationNormal": "200ms",
+      "durationSlow": "420ms",
+      "kenburnsDuration": "14s",
+      "easingCalm": "cubic-bezier(0.22, 1, 0.36, 1)"
+    },
+    "layout": {
+      "pageContainer": "1180px",
+      "wideMediaContainer": "1320px",
+      "readingContainer": "760px",
+      "formContainer": "640px"
+    },
+    "focusRing": {
+      "color": "#E4B96F",
+      "width": "3px",
+      "offset": "3px"
+    },
+    "breakpoints": {
+      "sm": "640px",
+      "md": "768px",
+      "lg": "1024px",
+      "xl": "1280px",
+      "2xl": "1536px"
+    }
+  }
+}

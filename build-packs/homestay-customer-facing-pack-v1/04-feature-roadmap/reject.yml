@@ -1,0 +1,11 @@
+reject_for_mvp:
+- F&B_menu_order_metaphor
+- fake_hotel_booking_grid
+- autoplay_social_video_everywhere
+- full_social_feed_embed
+- login_before_inquiry
+- payment_before_availability_confirmation
+- vague_DM_for_price_only
+- hidden_rules_until_after_deposit
+- heavy_SPA_for_all_public_pages
+- generic_AI_chatbot

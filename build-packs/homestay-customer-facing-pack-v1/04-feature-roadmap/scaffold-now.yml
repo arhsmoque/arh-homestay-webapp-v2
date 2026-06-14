@@ -1,0 +1,13 @@
+scaffold_now:
+- property_facts_schema
+- media_registry
+- package_schema
+- inquiry_schema
+- availability_status_schema
+- review_model
+- campaign_landing_model
+- analytics_event_registry
+- structured_data_generator
+- owner_content_adapter_seam
+- payment_adapter_seam
+- availability_calendar_seam

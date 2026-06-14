@@ -1,0 +1,43 @@
+hero:
+  role: first impression
+  examples:
+  - wide_pool_photo
+  - house_and_pool_photo
+  - night_pool_ambience
+proof:
+  role: hard evidence
+  examples:
+  - bedrooms
+  - bathrooms
+  - kitchen
+  - parking
+  - gate
+  - top_view_layout
+occasion:
+  role: help guest imagine use
+  examples:
+  - family_day_setup
+  - BBQ_area
+  - corporate_retreat_setup
+  - akad_or_engagement_corner
+ambience:
+  role: emotional desire
+  examples:
+  - night_pool
+  - rain_evening
+  - cozy_living
+  - morning_compound
+logistics:
+  role: reduce arrival anxiety
+  examples:
+  - road_entrance
+  - gate_photo
+  - route_video
+  - nearby_landmark
+social:
+  role: short-form discovery
+  examples:
+  - TikTok_pool_clip
+  - compound_tour
+  - route_guide
+  - event_setup_clip

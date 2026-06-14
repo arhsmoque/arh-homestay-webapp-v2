@@ -1,0 +1,22 @@
+commercial_schemas:
+- package
+- rate_table
+- rate_rule
+- rate_quote
+- rate_reason_log
+- deposit_rule
+- owner_override
+- price_display_policy
+- special_date
+- promo_discount
+- commercial_audit_event
+commercial_guardrails:
+- current_rate_change_does_not_mutate_confirmed_booking
+- sent_quote_cannot_be_edited_in_place
+- superseding_quote_required_for_change
+- owner_override_requires_reason
+- event_and_stay_pax_rules_separate
+- deposit_paid_does_not_auto_confirm_booking
+- active_package_requires_display_policy
+- active_event_package_requires_event_rules
+- rate_change_requires_public_preview

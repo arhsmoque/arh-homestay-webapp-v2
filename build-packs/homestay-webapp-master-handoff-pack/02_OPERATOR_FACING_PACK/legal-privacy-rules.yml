@@ -1,0 +1,48 @@
+legal_privacy_schemas:
+- privacy_notice
+- booking_terms
+- house_rules
+- pool_rules
+- event_rules
+- cancellation_policy
+- damage_policy
+- policy_version
+- policy_acknowledgement
+- data_inventory
+- data_retention_policy
+- media_permission
+- personal_data_export_audit
+- dispute_evidence
+- compliance_verification
+core_rules:
+- show_rules_early
+- version_rules_always
+- link_rules_to_bookings
+- audit_policy_changes
+- collect_less_data
+- protect_guest_identity
+- use_permission_status_before_public_guest_media
+- do_not_pretend_every_website_rule_is_automatically_enforceable
+enforceability_layers:
+  system_can_enforce:
+  - required_fields
+  - owner_confirmation_before_booking
+  - calendar_conflict_block
+  - policy_version_link
+  - privacy_notice_visibility
+  - guest_data_access_restriction
+  - audit_on_export
+  system_can_state_but_needs_evidence:
+  - cancellation_policy
+  - deposit_forfeiture
+  - damage_claim
+  - extra_cleaning_fee
+  - undeclared_event_use
+  - late_checkout_fee
+  system_should_not_claim_alone:
+  - blanket_no_refund_without_clear_policy
+  - unlimited_penalty
+  - hidden_fee_after_payment
+  - retroactive_policy_change
+  - public_guest_shaming
+  - guest_media_without_permission

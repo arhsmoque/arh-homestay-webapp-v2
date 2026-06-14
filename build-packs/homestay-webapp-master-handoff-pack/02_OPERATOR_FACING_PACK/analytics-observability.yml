@@ -1,0 +1,58 @@
+owner_analytics:
+  business:
+  - inquiries
+  - confirmed_bookings
+  - completed_bookings
+  - cancelled_bookings
+  - confirmed_revenue
+  - deposits_collected
+  - pending_balance
+  - average_booking_value
+  funnel:
+  - inquiry
+  - contacted
+  - quoted
+  - hold
+  - pending_deposit
+  - confirmed
+  source:
+  - google
+  - maps
+  - tiktok
+  - instagram
+  - facebook
+  - whatsapp
+  - website
+  - manual
+  content:
+  - top_pages
+  - whatsapp_clicks
+  - map_clicks
+  - gallery_opens
+  - faq_opens
+  - package_views
+developer_observability:
+  system_health:
+  - deployment_status
+  - public_site_status
+  - runtime_errors
+  data_health:
+  - invalid_records
+  - missing_required_fields
+  - booking_state_conflicts
+  - schema_mismatch
+  integration_health:
+  - whatsapp_link_status
+  - google_maps_link_status
+  - analytics_event_status
+  - metadata_generator_status
+  media_health:
+  - missing_alt_text
+  - oversized_images
+  - broken_references
+  - permission_unknown
+  governance_health:
+  - high_risk_changes
+  - missing_audit_events
+  - role_change_events
+  - policy_version_conflicts

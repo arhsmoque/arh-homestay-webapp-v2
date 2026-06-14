@@ -1,0 +1,59 @@
+roles:
+  guest:
+    can:
+    - view_public_pages
+    - send_inquiry
+    - read_rules
+    - open_map
+    cannot:
+    - access_operator_system
+    - see_other_guest_data
+  staff:
+    can:
+    - view_inquiries
+    - respond_to_inquiries
+    - add_internal_notes
+    - update_limited_booking_status
+    - upload_draft_media_if_allowed
+    cannot:
+    - change_rates_unless_allowed
+    - confirm_booking_without_permission
+    - export_guest_data
+    - edit_legal_terms
+    - manage_users
+  owner:
+    can:
+    - manage_business_content
+    - manage_bookings
+    - manage_calendar
+    - manage_rates_packages
+    - manage_media
+    - manage_rules
+    - view_analytics
+    - export_allowed_reports
+    cannot:
+    - change_schema
+    - change_auth_logic
+    - delete_audit_log
+    - edit_raw_design_system
+    - expose_guest_data_publicly
+  developer:
+    can:
+    - maintain_system
+    - repair_data_health
+    - manage_deployment
+    - manage_design_tokens
+    - inspect_observability
+    - manage_recovery_tools
+    cannot:
+    - silently_change_business_rates
+    - silently_change_confirmed_booking_terms
+    - override_owner_business_decision_without_audit
+  super_admin:
+    can:
+    - recover_access
+    - approve_destructive_mutations
+    - restore_backup
+    - lock_editing
+    - rotate_secrets
+    - manage_roles

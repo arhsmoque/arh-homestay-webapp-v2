@@ -1,0 +1,46 @@
+card_taxonomy:
+  desire_cards:
+    - HeroDecisionCard
+    - SignaturePoolCard
+    - AmbienceCard
+    - GalleryStoryCard
+  fit_cards:
+    - FastProofStrip
+    - PaxCapacityCard
+    - SleepSummaryCard
+    - RoomSleepCard
+    - FacilityProofCard
+  proof_cards:
+    - CompoundLayoutPreview
+    - PhotoProofCard
+    - VideoPreviewCard
+    - ParkingProofCard
+    - MapProofCard
+  occasion_cards:
+    - OccasionFitCard
+    - EventSuitabilityCard
+    - PackageSummaryCard
+  logistics_cards:
+    - LocationProofCard
+    - NearbyLandmarkCard
+    - RouteProofCard
+    - CheckInCard
+    - RulesSummaryCard
+  trust_cards:
+    - ReviewProofCard
+    - SocialProofCard
+    - FaqPreviewCard
+  action_cards:
+    - WhatsappInquiryCard
+    - DateInquiryCard
+    - PackageInquiryCard
+    - MapCtaCard
+
+card_anatomy:
+  media: proof or emotion
+  title: names the decision object
+  decision_label: tells the user what this card helps decide
+  facts: hard proof, not adjectives
+  microcopy: short human explanation
+  action: next step if useful
+  state: default, featured, limited, unavailable, coming_soon, needs_confirmation

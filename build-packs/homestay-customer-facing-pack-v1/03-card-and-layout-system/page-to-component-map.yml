@@ -1,0 +1,63 @@
+home:
+  - HeroDecisionCard
+  - FastProofStrip
+  - OccasionFitCard
+  - SignaturePoolCard
+  - SleepSummaryCard
+  - CompoundLayoutPreview
+  - EventSuitabilityCard
+  - GalleryStoryCard
+  - LocationProofCard
+  - PackageSummaryCard
+  - ReviewProofCard
+  - FaqPreviewCard
+  - WhatsappInquiryCard
+stay:
+  - SleepSummaryCard
+  - RoomSleepCard
+  - FacilityProofCard
+  - RulesSummaryCard
+  - WhatsappInquiryCard
+private_pool:
+  - SignaturePoolCard
+  - GalleryStoryCard
+  - FaqPreviewCard
+  - RulesSummaryCard
+  - WhatsappInquiryCard
+events:
+  - OccasionFitCard
+  - EventSuitabilityCard
+  - CompoundLayoutPreview
+  - PackageSummaryCard
+  - RulesSummaryCard
+  - WhatsappInquiryCard
+layout:
+  - CompoundLayoutPreview
+  - ParkingProofCard
+  - EventFlowCard
+  - RainPlanCard
+  - MapCtaCard
+gallery:
+  - GalleryStoryCard
+  - PhotoProofCard
+  - VideoPreviewCard
+location:
+  - LocationProofCard
+  - NearbyLandmarkCard
+  - RouteProofCard
+  - MapCtaCard
+packages:
+  - PackageSummaryCard
+  - FaqPreviewCard
+  - WhatsappInquiryCard
+faq:
+  - FaqPreviewCard
+  - RulesSummaryCard
+  - WhatsappInquiryCard
+book:
+  - BookingModeSelector
+  - StayInquiryForm
+  - EventInquiryForm
+  - CorporateInquiryForm
+  - WhatsappMessagePreview
+  - SendWhatsappInquiryButton

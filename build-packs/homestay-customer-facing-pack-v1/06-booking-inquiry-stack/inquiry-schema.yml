@@ -1,0 +1,34 @@
+customer_inquiry:
+  inquiry_id: generated_if_form_used
+  created_at: ""
+  source:
+    channel: "website | whatsapp | tiktok | instagram | facebook | google | maps"
+    landing_page: ""
+    campaign: ""
+  inquiry_mode: "stay | event | corporate"
+  guest:
+    name: ""
+    phone: ""
+    email_optional: ""
+    preferred_contact: "whatsapp | phone | email"
+  stay_details:
+    date: ""
+    number_of_nights: ""
+    pax: ""
+    kids_elderly_note_optional: ""
+    cars_optional: ""
+  event_details:
+    event_type_optional: ""
+    estimated_pax_optional: ""
+    day_use_or_overnight_optional: ""
+    pool_use_optional: ""
+    setup_needs_optional: ""
+  package:
+    selected_package_id: ""
+    package_label: ""
+  message:
+    generated_whatsapp_text: ""
+    guest_questions: ""
+  consent:
+    privacy_notice_seen: true
+    booking_summary_seen: true

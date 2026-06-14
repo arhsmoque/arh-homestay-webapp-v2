@@ -1,0 +1,65 @@
+:root {
+  --color-background-page: #F7F4EE;
+  --color-background-warm: #EFE7DA;
+  --color-background-mist: #E8ECE8;
+  --color-background-evening: #283145;
+
+  --color-surface-card: #FFFCF7;
+  --color-surface-card-warm: #EFE7DA;
+  --color-surface-card-evening: #303A50;
+
+  --color-text-primary: #20201D;
+  --color-text-secondary: #4D4A43;
+  --color-text-inverse: #FFFFFF;
+
+  --color-border-subtle: #DDD2C0;
+  --color-border-warm: #C6A878;
+
+  --color-action-primary: #1F5F6B;
+  --color-action-primary-hover: #184F59;
+  --color-action-secondary: #66724D;
+  --color-action-warm: #9E5D3D;
+
+  --color-proof-pool: #2F8F9D;
+  --color-proof-layout: #66724D;
+  --color-proof-event: #B96F4A;
+  --color-proof-location: #1F5F6B;
+
+  --color-focus-ring: #E4B96F;
+
+  --font-display: Fraunces, Georgia, serif;
+  --font-body: Manrope, Inter, system-ui, sans-serif;
+
+  --radius-card: 22px;
+  --radius-media: 32px;
+  --radius-button: 999px;
+  --radius-input: 14px;
+
+  --shadow-card: 0 8px 24px rgba(32, 32, 29, 0.08);
+  --shadow-media: 0 18px 48px rgba(32, 32, 29, 0.14);
+  --shadow-floating: 0 16px 36px rgba(32, 32, 29, 0.18);
+
+  --space-section-y-mobile: 48px;
+  --space-section-y-desktop: 96px;
+  --space-card-padding-mobile: 20px;
+  --space-card-padding-desktop: 28px;
+
+  --duration-fast: 120ms;
+  --duration-normal: 200ms;
+  --duration-slow: 420ms;
+  --ease-calm: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.theme-evening {
+  --color-background-page: #283145;
+  --color-surface-card: #303A50;
+  --color-text-primary: #FFFDF8;
+  --color-text-secondary: #DDE3EA;
+  --color-action-primary: #E4B96F;
+}
+
+.theme-event {
+  --color-background-page: #EFE7DA;
+  --color-action-primary: #9E5D3D;
+  --color-proof-event: #B96F4A;
+}

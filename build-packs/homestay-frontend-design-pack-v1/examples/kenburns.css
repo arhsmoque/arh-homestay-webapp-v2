@@ -1,0 +1,26 @@
+@keyframes homestayKenburns {
+  from {
+    transform: scale(1.03) translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: scale(1.08) translate3d(-1.5%, -1%, 0);
+  }
+}
+
+.media-kenburns {
+  overflow: hidden;
+}
+
+.media-kenburns > img {
+  animation: homestayKenburns 14s ease-out infinite alternate;
+  transform-origin: center;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .media-kenburns > img {
+    animation: none !important;
+    transform: none !important;
+  }
+}

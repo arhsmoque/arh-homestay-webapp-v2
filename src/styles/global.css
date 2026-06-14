@@ -354,36 +354,62 @@ a {
   will-change: transform;
 }
 
+/* Base positioning for theme assets (stacked on top of each other for fade transition) */
+.v3-theme-day,
 .v3-theme-night {
-  display: none;
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s cubic-bezier(0.25, 1, 0.5, 1);
+  z-index: -2;
 }
 
+/* Light mode (default & explicit light) */
+.v3-theme-day {
+  opacity: 1;
+  pointer-events: auto;
+}
+.v3-theme-night {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Dark mode (system prefers dark & explicit dark) */
 @media (prefers-color-scheme: dark) {
-  .v3-theme-day {
-    display: none;
+  :root:not([data-theme="light"]) .v3-theme-day {
+    opacity: 0;
+    pointer-events: none;
   }
-
-  .v3-theme-night {
-    display: block;
+  :root:not([data-theme="light"]) .v3-theme-night {
+    opacity: 1;
+    pointer-events: auto;
   }
 }
 
+/* Explicit overrides */
 :root[data-theme="light"] .v3-theme-day {
-  display: block;
+  opacity: 1;
+  pointer-events: auto;
 }
-
 :root[data-theme="light"] .v3-theme-night {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
 }
 
 :root[data-theme="dark"] .v3-theme-day {
-  display: none;
+  opacity: 0;
+  pointer-events: none;
 }
-
 :root[data-theme="dark"] .v3-theme-night {
-  display: block;
+  opacity: 1;
+  pointer-events: auto;
 }
 
+/* Hero media overlay */
 .v3-hero-media::after {
   content: "";
   position: absolute;
@@ -391,12 +417,23 @@ a {
   background:
     linear-gradient(90deg, rgba(18, 50, 58, 0.42) 0%, rgba(18, 50, 58, 0.15) 100%),
     linear-gradient(180deg, rgba(18, 50, 58, 0.1), rgba(18, 50, 58, 0.22));
+  transition: background 0.8s ease-in-out;
 }
 
+/* Override image overlay for light/day theme to make dark text highly readable */
+:root:not([data-theme="dark"]) .v3-hero-media::after,
+:root[data-theme="light"] .v3-hero-media::after {
+  background:
+    linear-gradient(90deg, rgba(255, 250, 242, 0.42) 0%, rgba(255, 250, 242, 0.12) 100%),
+    linear-gradient(180deg, rgba(255, 250, 242, 0.05), rgba(255, 250, 242, 0.58));
+}
+
+/* Hero copy layout */
 .v3-hero-copy {
   width: min(760px, 100%);
   padding: clamp(92px, 14vh, 156px) 0 clamp(76px, 12vh, 120px);
-  color: #ffffff;
+  color: var(--ink); /* Dark text for light/day theme */
+  transition: color 0.8s ease-in-out;
 }
 
 .v3-hero-title {
@@ -413,17 +450,85 @@ a {
   margin-top: 1.25rem;
   font-size: clamp(17px, 2vw, 22px);
   line-height: 1.5;
+  color: var(--muted); /* Muted dark text for light/day theme */
+  transition: color 0.8s ease-in-out;
+}
+
+/* Override copy color for dark theme */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .v3-hero-copy {
+    color: #ffffff;
+  }
+  :root:not([data-theme="light"]) .v3-hero-lede {
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+:root[data-theme="dark"] .v3-hero-copy {
+  color: #ffffff;
+}
+
+:root[data-theme="dark"] .v3-hero-lede {
   color: rgba(255, 255, 255, 0.9);
 }
 
-.v3-hero-secondary {
+/* Theme-aware Hero Buttons */
+.v3-hero-btn-primary {
+  color: #ffffff;
+  background: var(--deep-pool);
+  transition: background 0.8s ease-in-out, color 0.8s ease-in-out;
+}
+
+.v3-hero-btn-primary:hover {
+  background: var(--canopy-soft);
+}
+
+.v3-hero-btn-secondary {
+  border: 1px solid var(--line);
+  background: var(--surface-card);
+  color: var(--ink);
+  transition: background 0.8s ease-in-out, border-color 0.8s ease-in-out, color 0.8s ease-in-out;
+}
+
+.v3-hero-btn-secondary:hover {
+  border-color: rgba(31, 95, 107, 0.46);
+  background: var(--warm);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .v3-hero-btn-primary {
+    color: var(--deep-pool);
+    background: #ffffff;
+  }
+  :root:not([data-theme="light"]) .v3-hero-btn-primary:hover {
+    background: var(--warm);
+  }
+  :root:not([data-theme="light"]) .v3-hero-btn-secondary {
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    backdrop-filter: blur(14px);
+  }
+  :root:not([data-theme="light"]) .v3-hero-btn-secondary:hover {
+    background: rgba(255, 250, 240, 0.2);
+  }
+}
+
+:root[data-theme="dark"] .v3-hero-btn-primary {
+  color: var(--deep-pool);
+  background: #ffffff;
+}
+:root[data-theme="dark"] .v3-hero-btn-primary:hover {
+  background: var(--warm);
+}
+
+:root[data-theme="dark"] .v3-hero-btn-secondary {
   border: 1px solid rgba(255, 255, 255, 0.35);
   background: rgba(255, 255, 255, 0.1);
   color: #ffffff;
   backdrop-filter: blur(14px);
 }
-
-.v3-hero-secondary:hover {
+:root[data-theme="dark"] .v3-hero-btn-secondary:hover {
   background: rgba(255, 250, 240, 0.2);
 }
 

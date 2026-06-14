@@ -1,0 +1,41 @@
+audit_event:
+  id: ''
+  timestamp: ''
+  actor:
+    id: ''
+    role: ''
+    display_name: ''
+  action:
+    verb: ''
+    domain: ''
+    risk_class: ''
+    target_type: ''
+    target_id: ''
+  before:
+    summary: ''
+    snapshot_ref: ''
+  after:
+    summary: ''
+    snapshot_ref: ''
+  authority:
+    permission_checked: true
+    approval_required: false
+    approved_by: ''
+    approval_timestamp: ''
+  impact:
+    public_visible: false
+    financial: false
+    legal_policy: false
+    guest_data: false
+    booking_state: false
+  evidence:
+    preview_ref: ''
+    validation_result_ref: ''
+    source_page: ''
+    ip_or_device_ref: ''
+  recovery:
+    reversible: true
+    rollback_ref: ''
+    retention_until: ''
+  note:
+    reason: ''

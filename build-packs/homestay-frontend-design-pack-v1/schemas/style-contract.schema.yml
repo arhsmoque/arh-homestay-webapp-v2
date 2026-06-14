@@ -1,0 +1,16 @@
+style_contract:
+  required:
+    - design_config_source_of_truth
+    - semantic_tokens
+    - component_registry
+    - media_registry
+    - accessibility_floor
+    - performance_targets
+
+  forbidden:
+    - random_hex_values_in_components
+    - hover_only_critical_information
+    - autoplay_video_grid
+    - owner_raw_token_editing
+    - full_social_feed_above_fold
+    - missing_reduced_motion_fallback

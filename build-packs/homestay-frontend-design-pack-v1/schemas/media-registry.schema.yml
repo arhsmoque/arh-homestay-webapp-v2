@@ -1,0 +1,49 @@
+media_registry_item:
+  id:
+    type: string
+    required: true
+  file:
+    type: string
+    required: true
+  type:
+    enum: [image, video]
+    required: true
+  group:
+    enum: [hero, pool, room, event, layout, location, route, night, rain, parking]
+    required: true
+  role:
+    enum: [hero, proof, ambience, logistics, social]
+    required: true
+  aspect_ratio:
+    enum: ["16:9", "4:3", "3:2", "1:1", "9:16", "1200x630"]
+    required: true
+  alt_text:
+    type: string
+    required: true
+  caption:
+    type: string
+    required: true
+  page_usage:
+    type: array
+    required: true
+  priority:
+    enum: [hero, above_fold, normal, lazy]
+    required: true
+  playback:
+    mode:
+      enum: [none, tap_to_play, muted_loop]
+      required: true
+    reduced_motion_fallback:
+      type: boolean
+      required: true
+  permission:
+    status:
+      enum: [owned, guest_approved, hidden]
+      required: true
+  realism:
+    edited:
+      type: boolean
+      required: true
+    edit_notes:
+      type: string
+      required: false

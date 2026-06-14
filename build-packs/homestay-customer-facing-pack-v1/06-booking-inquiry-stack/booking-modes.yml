@@ -1,0 +1,54 @@
+booking_modes:
+  stay:
+    label: Overnight Stay
+    best_for:
+      - family stay
+      - weekend stay
+      - private pool stay
+    required_fields:
+      - date
+      - number_of_nights
+      - pax
+      - cars_optional
+      - questions_optional
+  event:
+    label: Family Day / Private Event
+    best_for:
+      - family day
+      - birthday
+      - engagement
+      - akad
+      - BBQ gathering
+      - luncheon
+    required_fields:
+      - date
+      - event_type
+      - estimated_pax
+      - day_use_or_overnight
+      - cars
+      - pool_use
+      - setup_needs_optional
+      - questions_optional
+  corporate:
+    label: Corporate / SME Retreat
+    best_for:
+      - small retreat
+      - team discussion
+      - appreciation gathering
+      - private luncheon
+    required_fields:
+      - date
+      - organization_name_optional
+      - estimated_pax
+      - day_use_or_overnight
+      - setup_needs
+      - cars
+      - questions_optional
+public_lifecycle:
+  - Send inquiry
+  - Owner confirms availability
+  - Date reserved
+  - Deposit required
+  - Booking confirmed
+  - Arrival details sent
+  - Stay completed

@@ -1,0 +1,40 @@
+owner_control_panel:
+- Today
+- Bookings
+- Calendar
+- Rates & Packages
+- Property Content
+- Media
+- Social & Reviews
+- Rules & Policies
+- Analytics
+- Settings
+developer_console:
+- System Overview
+- Data Health
+- Integrations
+- SEO / Structured Data
+- Audit Trail
+- Design System
+- Recovery
+invariant_core:
+- Auth
+- RBAC
+- Permission Matrix
+- Booking State Machine
+- Calendar Conflict Engine
+- Audit Log
+- Policy Versioning
+- Rate Validation
+- Data Health Checks
+- Backup / Recovery
+- Integration Secret Handling
+adapters:
+- OwnerContentAdapter
+- BookingOperationAdapter
+- RatePackageAdapter
+- MediaAdapter
+- AnalyticsAdapter
+- LegalPolicyAdapter
+- DeveloperDesignAdapter
+- DeveloperSystemAdapter

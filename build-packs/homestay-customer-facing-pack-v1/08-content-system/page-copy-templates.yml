@@ -1,0 +1,50 @@
+home:
+  hero:
+    headline: "Private Pool Homestay near [Location]"
+    subheadline: "For family stays, BBQ, family day, small events, and relaxed private gatherings."
+    chips:
+      - Private pool
+      - Sleeps X
+      - Parking X cars
+      - Near [landmark]
+    cta_primary: Check availability
+    cta_secondary: View layout
+  best_for:
+    heading: Best for
+    intro: Choose the setup that matches your plan.
+  proof:
+    heading: What the space includes
+    intro: Clear facts before you book.
+  final_cta:
+    heading: Want to check your date?
+    text: Send your date, pax, and purpose by WhatsApp.
+stay:
+  headline: Comfortable stay for families and small groups
+  intro: See the rooms, sleeping arrangement, bathrooms, kitchen, parking, and house facilities before you confirm.
+  cta: Check stay dates
+private_pool:
+  headline: Private pool for your group
+  intro: Enjoy pool time with your family or group during your booking. Pool rules apply.
+  cta: Ask about pool use
+events:
+  headline: Private space for family day and small events
+  intro: Suitable for controlled family gatherings, BBQ, birthdays, engagement, akad, luncheons, and small corporate retreats.
+  caution: Event use must be declared before confirmation. Rates and rules may differ from overnight stays.
+  cta: Ask event package
+layout:
+  headline: See how the compound works
+  intro: View the relationship between the main house, guest house, pool, parking, gazebo, gate, and gathering areas.
+  cta: Ask about your setup
+location:
+  headline: Easy to find near [Landmark]
+  intro: Use the Google Maps pin, nearby landmarks, gate photo, and parking notes to plan your arrival.
+  cta: Open Google Maps
+booking:
+  headline: Check your date
+  intro: Tell us your date, pax, and purpose. We will confirm availability and final rate by WhatsApp.
+  modes:
+    - Overnight stay
+    - Family day / event
+    - Corporate retreat
+  legal_short: Deposit, cancellation, pax, pool, and event rules apply.
+  cta: Send WhatsApp inquiry

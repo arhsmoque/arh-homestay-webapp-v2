@@ -1,0 +1,33 @@
+seo_page_roles:
+  home:
+    route: /
+    target: "homestay private pool [location]"
+    role: main entity and brand
+  stay:
+    route: /stay
+    target: "family homestay [location]"
+    role: sleeping and facility proof
+  private_pool:
+    route: /private-pool
+    target: "private pool homestay [location]"
+    role: pool intent capture
+  events:
+    route: /events
+    target: "homestay for family day / event space [location]"
+    role: occasion intent capture
+  layout:
+    route: /layout
+    target: "homestay with parking / private compound [location]"
+    role: trust and usability proof
+  location:
+    route: /location
+    target: "homestay near [landmark]"
+    role: landmark and map discovery
+  packages:
+    route: /packages
+    target: "homestay package [location]"
+    role: commercial intent
+  faq:
+    route: /faq
+    target: "homestay rules / pax / pool / booking"
+    role: long-tail objection capture

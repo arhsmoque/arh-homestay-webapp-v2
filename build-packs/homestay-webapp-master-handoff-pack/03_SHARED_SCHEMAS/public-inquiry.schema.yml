@@ -1,0 +1,17 @@
+public_inquiry:
+  inquiry_mode: stay | event | corporate
+  date: ''
+  nights_optional: ''
+  pax: ''
+  cars_optional: ''
+  package_id_optional: ''
+  event_type_optional: ''
+  setup_needs_optional: ''
+  questions_optional: ''
+  source:
+    page: ''
+    campaign: ''
+    referrer: ''
+  consent:
+    privacy_notice_seen: true
+    booking_summary_seen: true

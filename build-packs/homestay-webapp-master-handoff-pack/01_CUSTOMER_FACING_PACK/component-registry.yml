@@ -1,0 +1,47 @@
+identity_and_hero:
+- HeroDecisionCard
+- FastProofStrip
+- StickyBookingBar
+fit_and_capacity:
+- SleepSummaryCard
+- RoomSleepCard
+- FacilityProofCard
+- PaxCapacityBadge
+pool_and_media:
+- SignaturePoolCard
+- GalleryStoryCard
+- PhotoProofCard
+- VideoPreviewCard
+layout_and_logistics:
+- CompoundLayoutPreview
+- LayoutMarkerMap
+- ParkingProofCard
+- RouteProofCard
+- LocationProofCard
+- NearbyLandmarkCard
+- GoogleMapsCta
+occasion_and_packages:
+- OccasionFitCard
+- EventSuitabilityCard
+- PackageSummaryCard
+- RateExpectationCard
+trust_and_rules:
+- ReviewProofCard
+- SocialProofCard
+- FaqPreviewCard
+- RulesSummaryCard
+- BookingTermsPreview
+booking_and_conversion:
+- BookingModeSelector
+- StayInquiryForm
+- EventInquiryForm
+- CorporateInquiryForm
+- PackageSelector
+- WhatsappMessagePreview
+- SendWhatsappInquiryButton
+- AlternativeContactCard
+discovery_and_metadata:
+- GoogleSearchMetadata
+- StructuredPropertyData
+- SocialSharePreview
+- AnalyticsEventEmitter

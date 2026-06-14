@@ -1,0 +1,38 @@
+owner_receives:
+- owner_login
+- owner_control_panel_training
+- booking_workflow_guide
+- rate_package_editing_guide
+- media_upload_guide
+- rules_policy_editing_guide
+- analytics_explanation
+- support_contact
+owner_understands:
+- inquiry_is_not_booking
+- booking_confirmed_requires_owner_action
+- deposit_paid_is_not_auto_confirmation
+- rate_changes_do_not_change_old_bookings
+- rules_are_versioned
+- guest_data_exports_are_sensitive
+- dangerous_actions_are_restricted
+developer_retains:
+- repo_access
+- deployment_access
+- environment_secret_management
+- schema_migration_access
+- backup_restore_access
+- developer_console_access
+- audit_debug_access
+super_admin_retains:
+- role_recovery
+- emergency_lock
+- destructive_action_approval
+- backup_restore_approval
+documents_delivered:
+- permission_matrix
+- booking_state_machine
+- commercial_engine
+- legal_privacy_model
+- audit_recovery_model
+- validation_plan
+- support_runbook

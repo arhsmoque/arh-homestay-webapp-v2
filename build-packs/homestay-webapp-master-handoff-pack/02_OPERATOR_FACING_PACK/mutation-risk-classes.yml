@@ -1,0 +1,62 @@
+read_only:
+  examples:
+  - view_dashboard
+  - view_booking
+  - view_audit_log
+  controls:
+  - permission_check
+low_content_mutation:
+  examples:
+  - edit_tagline
+  - update_faq
+  - update_gallery_caption
+  controls:
+  - validation
+  - preview
+  - audit
+medium_business_mutation:
+  examples:
+  - change_rate
+  - change_package
+  - block_date
+  - mark_deposit_paid
+  - confirm_booking
+  controls:
+  - confirmation
+  - affected_surface_preview
+  - audit
+  - recovery
+high_policy_mutation:
+  examples:
+  - change_cancellation_policy
+  - change_privacy_notice
+  - change_event_rules
+  controls:
+  - version_diff
+  - approval
+  - public_effect_warning
+  - audit
+  - rollback
+privileged_system_mutation:
+  examples:
+  - change_roles
+  - run_schema_migration
+  - rotate_secrets
+  - restore_backup
+  controls:
+  - developer_or_super_admin
+  - dry_run
+  - approval
+  - rollback_plan
+  - audit
+destructive_mutation:
+  examples:
+  - hard_delete_guest_record
+  - purge_media
+  - delete_booking_record
+  controls:
+  - avoid_by_default
+  - soft_delete_first
+  - retention_check
+  - super_admin_approval
+  - audit

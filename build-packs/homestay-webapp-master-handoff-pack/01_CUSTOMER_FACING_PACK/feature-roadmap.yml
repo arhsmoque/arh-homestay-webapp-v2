@@ -1,0 +1,66 @@
+build_now:
+  public_pages:
+  - home
+  - stay
+  - private_pool
+  - events
+  - layout
+  - gallery
+  - location
+  - packages
+  - faq
+  - book
+  conversion:
+  - sticky_whatsapp_cta
+  - structured_whatsapp_payload
+  - booking_mode_selector
+  - stay_event_corporate_inquiry_modes
+  proof:
+  - private_pool_proof
+  - room_sleep_summary
+  - parking_proof
+  - layout_preview
+  - event_suitability
+  - location_proof
+  - grouped_gallery
+  discovery:
+  - page_metadata
+  - open_graph_previews
+  - sitemap
+  - image_alt_text
+  - google_maps_cta
+  - social_share_links
+scaffold_now:
+- property_facts_schema
+- media_registry
+- package_schema
+- inquiry_schema
+- availability_status_schema
+- review_model
+- campaign_landing_model
+- analytics_event_registry
+- structured_data_generator
+- owner_content_adapter_seam
+- payment_adapter_seam
+- availability_calendar_seam
+defer:
+- full_live_calendar
+- online_deposit_payment
+- guest_account
+- AI_guest_assistant
+- 3D_walkthrough
+- dynamic_pricing_display
+- OTA_channel_manager
+- full_multilingual_site
+- guest_guide_portal
+reject_for_mvp:
+- F&B_menu_order_metaphor
+- fake_hotel_booking_grid
+- autoplay_social_video_everywhere
+- full_social_feed_embed
+- login_before_inquiry
+- payment_before_availability_confirmation
+- vague_DM_for_price_only
+- hidden_rules_until_after_deposit
+- heavy_SPA_for_all_public_pages
+- generic_AI_chatbot

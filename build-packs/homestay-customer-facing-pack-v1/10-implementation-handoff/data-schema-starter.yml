@@ -1,0 +1,79 @@
+property_facts:
+  identity:
+    homestay_name: ""
+    tagline: ""
+    short_description: ""
+    primary_location_label: ""
+  location:
+    address: ""
+    google_maps_url: ""
+    coordinates:
+      lat: ""
+      lng: ""
+    nearby_landmarks: []
+  capacity:
+    comfortable_sleep_pax: ""
+    maximum_sleep_pax: ""
+    maximum_day_event_pax: ""
+    parking_count: ""
+  spaces:
+    - id: main_house
+      label: Main House
+    - id: guest_house
+      label: Guest House
+    - id: private_pool
+      label: Private Pool
+    - id: gazebo
+      label: Gazebo
+    - id: parking
+      label: Parking
+  facilities:
+    - private_pool
+    - kitchen
+    - bbq
+    - wifi
+    - aircond
+    - parking
+    - gazebo
+  booking:
+    whatsapp_number: ""
+    default_inquiry_mode: whatsapp
+    booking_terms_url: /faq#booking-terms
+  rules_public:
+    check_in: ""
+    check_out: ""
+    deposit_summary: ""
+    cancellation_summary: ""
+    pool_rules_summary: ""
+    event_rules_summary: ""
+
+media_registry_item:
+  id: ""
+  file: ""
+  type: "image | video"
+  group: "hero | pool | room | event | layout | location | route | night | rain | parking"
+  alt_text: ""
+  caption: ""
+  page_usage: []
+  featured: true
+  aspect_ratio: "16:9 | 4:3 | 1:1 | 9:16"
+  priority: "hero | above_fold | normal | lazy"
+  permission_status: "owned | guest_approved | hidden"
+
+public_inquiry:
+  inquiry_mode: "stay | event | corporate"
+  date: ""
+  nights_optional: ""
+  pax: ""
+  cars_optional: ""
+  package_id_optional: ""
+  event_type_optional: ""
+  setup_needs_optional: ""
+  questions_optional: ""
+  source:
+    page: ""
+    campaign: ""
+    referrer: ""
+  consent:
+    privacy_notice_seen: true
+    booking_summary_seen: true

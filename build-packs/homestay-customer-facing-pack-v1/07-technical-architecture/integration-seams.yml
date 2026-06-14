@@ -1,0 +1,22 @@
+integration_seams:
+  booking:
+    current: WhatsappPayloadBuilder
+    future: InquiryApiAdapter
+  availability:
+    current: AvailabilityNoticeCard
+    future: AvailabilityCalendarAdapter
+  payment:
+    current: DepositSummaryCard
+    future: PaymentLinkAdapter
+  media:
+    current: StaticMediaRegistry
+    future: CloudflareMediaAdapter
+  analytics:
+    current: AnalyticsEventEmitter
+    future: OwnerAnalyticsAdapter
+  admin_content:
+    current: FileContentAdapter
+    future: OwnerContentApiAdapter
+  seo:
+    current: StaticMetadataGenerator
+    future: StructuredDataGenerator

@@ -1,0 +1,24 @@
+salvage:
+- Cloudflare deployment workflow
+- working responsive primitives
+- useful Tailwind/shadcn components
+- WhatsApp CTA idea
+- visual assets that fit homestay
+- admin/content ideas for later operator pack
+rewrite:
+- information_architecture
+- homepage_order
+- card_taxonomy
+- page_routes
+- booking_mode_model
+- package_model
+- property_facts_schema
+- gallery_grouping
+- copy_registers
+retire:
+- menu_order_metaphor
+- food_item_cards
+- product_variant_logic
+- cart_checkout_metaphor
+- cafe_social_tone
+- F&B_density

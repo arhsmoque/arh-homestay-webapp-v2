@@ -1,0 +1,48 @@
+pages:
+  /:
+    name: Home
+    role: orientation, desire, proof, routing, conversion
+    primary_cta: Check availability
+  /stay:
+    name: Stay Details
+    role: rooms, beds, pax, bathrooms, kitchen, family comfort
+  /private-pool:
+    name: Private Pool
+    role: pool proof, day/night/rain ambience, pool FAQ
+  /events:
+    name: Private Events
+    role: family day, birthday, akad, engagement, BBQ, corporate retreat
+  /layout:
+    name: Compound Layout
+    role: top-view, parking, pool, main house, guest house, gazebo, rain/event zones
+  /gallery:
+    name: Gallery
+    role: grouped visual proof
+  /location:
+    name: Location
+    role: map, landmarks, route proof, parking, arrival confidence
+  /packages:
+    name: Packages
+    role: family stay, weekday stay, family day, private event, corporate retreat
+  /faq:
+    name: FAQ and Rules
+    role: objection handling and wrong-fit prevention
+  /book:
+    name: Book / Inquiry
+    role: purpose-specific inquiry and WhatsApp payload
+navigation:
+  primary:
+    - Home
+    - Stay
+    - Private Pool
+    - Events
+    - Layout
+    - Gallery
+    - Location
+    - Packages
+    - FAQ
+    - Book
+  mobile_sticky:
+    - WhatsApp
+    - Map
+    - Check Date

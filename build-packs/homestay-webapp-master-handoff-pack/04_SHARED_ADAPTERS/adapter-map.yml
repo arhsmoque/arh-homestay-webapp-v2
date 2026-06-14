@@ -1,0 +1,87 @@
+OwnerContentAdapter:
+  owns:
+  - property_facts
+  - public_business_copy
+  - FAQ
+  - location
+  - public preview
+  owner_can_edit: true
+  developer_controls:
+  - validation
+  - schema
+  - rendering safety
+BookingOperationAdapter:
+  owns:
+  - inquiry
+  - booking
+  - calendar_block
+  - payment_record
+  owner_can_edit: true
+  developer_controls:
+  - state machine
+  - conflict checks
+  - audit
+RatePackageAdapter:
+  owns:
+  - packages
+  - rates
+  - quotes
+  - deposit rules
+  - demand scaffold
+  owner_can_edit: true
+  developer_controls:
+  - formula structure
+  - validation
+  - quote freezing
+MediaAdapter:
+  owns:
+  - media registry
+  - gallery grouping
+  - permission status
+  owner_can_edit: true
+  developer_controls:
+  - optimization
+  - file validation
+  - performance
+AnalyticsAdapter:
+  owns:
+  - event registry
+  - owner metrics
+  - reports
+  owner_can_view: true
+  developer_controls:
+  - event health
+  - data quality
+  - privacy boundary
+LegalPolicyAdapter:
+  owns:
+  - privacy
+  - rules
+  - booking terms
+  - policy versions
+  owner_can_edit: true
+  developer_controls:
+  - versioning
+  - link visibility
+  - acknowledgement mechanism
+DeveloperDesignAdapter:
+  owns:
+  - tokens
+  - layout presets
+  - components
+  - accessibility
+  - performance
+  owner_can_choose_safe_presets: true
+  developer_controls:
+  - design system
+DeveloperSystemAdapter:
+  owns:
+  - auth
+  - schema
+  - deployment
+  - secrets
+  - backup
+  - recovery
+  owner_can_edit: false
+  developer_controls:
+  - system core

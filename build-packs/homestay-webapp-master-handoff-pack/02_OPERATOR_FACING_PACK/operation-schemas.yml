@@ -1,0 +1,14 @@
+operation_schemas:
+- inquiry
+- guest_record
+- booking
+- calendar_block
+- rate_quote
+- payment_record
+- policy_acknowledgement
+- internal_note
+- message_thread
+- cancellation_record
+- no_show_record
+- dispute_record
+- audit_event

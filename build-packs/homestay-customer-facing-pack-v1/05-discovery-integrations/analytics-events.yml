@@ -1,0 +1,51 @@
+public_tracking_events:
+  discovery:
+    - page_view_home
+    - page_view_private_pool
+    - page_view_events
+    - page_view_layout
+    - page_view_location
+    - page_view_packages
+  intent:
+    - click_view_layout
+    - click_view_pool
+    - click_view_events
+    - click_view_packages
+    - click_open_map
+    - click_gallery_group
+  conversion:
+    - click_whatsapp_sticky
+    - click_whatsapp_hero
+    - click_whatsapp_package
+    - click_whatsapp_event
+    - submit_inquiry_form_if_used
+  social:
+    - click_tiktok
+    - click_instagram
+    - click_facebook
+    - click_share_whatsapp
+    - click_google_review
+  trust:
+    - view_faq
+    - view_rules
+    - view_reviews
+    - view_location
+minimum_reports:
+  search:
+    - top_queries
+    - top_landing_pages
+    - impressions
+    - clicks
+    - average_position
+  website:
+    - top_pages
+    - whatsapp_click_rate
+    - map_click_rate
+    - package_click_rate
+    - gallery_engagement
+    - mobile_vs_desktop
+  social:
+    - tiktok_landing_page_clicks
+    - instagram_landing_page_clicks
+    - facebook_landing_page_clicks
+    - social_to_whatsapp_clicks

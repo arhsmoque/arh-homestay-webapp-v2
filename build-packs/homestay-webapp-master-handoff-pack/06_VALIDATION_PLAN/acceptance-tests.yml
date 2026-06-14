@@ -1,0 +1,42 @@
+customer_facing:
+  three_second_test: visitor can identify what it is, where it is, main hook, and
+    CTA
+  thirty_second_test: visitor can identify pax, pool, parking, event suitability,
+    location, and inquiry path
+  event_user_test: event visitor understands event type, pax, parking, layout, rain
+    plan, and rules
+  booking_test: inquiry includes date, pax, purpose, package, cars, and questions
+  trust_test: every major claim has proof
+permission_tests:
+  owner_cannot_edit_schema: blocked
+  staff_cannot_export_guest_data: blocked or requires approval
+  staff_cannot_confirm_booking_without_permission: blocked
+  developer_cannot_silently_change_confirmed_rate: blocked or audited reason required
+  super_admin_can_restore_access: allowed with audit
+booking_tests:
+  inquiry_not_booking: inquiry record only
+  quote_not_confirmation: rate quote created, no firm calendar block
+  hold_requires_expiry: tentative hold with expiry
+  confirmed_blocks_calendar: firm calendar block
+  double_booking_prevented: conflict warning or block
+  deposit_not_auto_confirm: payment record does not confirm booking without owner
+    action
+  policy_version_linked: confirmed booking stores policy versions
+commercial_tests:
+  active_package_requires_display_policy: blocked until complete
+  sent_quote_is_frozen: superseding quote required
+  rate_change_does_not_affect_confirmed_booking: confirmed booking keeps old quote
+  owner_override_requires_reason: reason and audit required
+  event_and_stay_pax_separate: separate pricing and capacity rules
+legal_privacy_tests:
+  privacy_notice_visible_when_collecting_data: visible in footer and inquiry flow
+  policy_change_not_retroactive: existing booking keeps old version
+  guest_media_requires_permission: permission status required
+  personal_data_export_audited: warning and audit event
+  dispute_locks_evidence: restricted mutation controls
+observability_tests:
+  broken_whatsapp_detected: owner/developer warning with remediation
+  confirmed_booking_without_calendar_block_detected: critical data health event
+  missing_rate_quote_detected: commercial data warning
+  analytics_event_missing_detected: event health warning
+  failed_check_has_remediation: recommended action visible

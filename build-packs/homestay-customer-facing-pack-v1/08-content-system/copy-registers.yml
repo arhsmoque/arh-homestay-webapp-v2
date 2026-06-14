@@ -1,0 +1,67 @@
+copy_registers:
+  warm_family:
+    use_for:
+      - hero subheadline
+      - family stay section
+      - pool section
+      - gallery captions
+    tone: warm, clear, inviting, practical
+    avoid:
+      - fake luxury
+      - over-formal wording
+      - childish excitement
+  local_malay_english:
+    use_for:
+      - WhatsApp prompts
+      - FAQ
+      - social captions
+      - local family copy
+    tone: natural Malaysian, friendly, not slang-heavy
+    avoid:
+      - forced full translation
+      - overuse of viral slang
+  international_plain_english:
+    use_for:
+      - location page
+      - check-in info
+      - rules
+      - outstation guests
+    tone: simple, direct, trust-building
+    avoid:
+      - idioms
+      - Malay-only terms without explanation
+  private_event_register:
+    use_for:
+      - family day
+      - birthday
+      - akad
+      - engagement
+      - luncheon
+      - BBQ
+    tone: organized, warm, controlled
+    avoid:
+      - hotel ballroom language
+      - party-club tone
+      - overpromising event capacity
+  corporate_retreat_register:
+    use_for:
+      - SME retreat
+      - discussion session
+      - appreciation gathering
+      - book club
+      - small seminar
+    tone: semi-formal, calm, purposeful
+    avoid:
+      - chalet casual
+      - luxury resort exaggeration
+  legal_rules_register:
+    use_for:
+      - house rules
+      - pool rules
+      - booking terms
+      - privacy notice
+    tone: plain, calm, firm, readable
+    avoid:
+      - threatening wording
+      - all caps
+      - lawyer-heavy blocks on first contact

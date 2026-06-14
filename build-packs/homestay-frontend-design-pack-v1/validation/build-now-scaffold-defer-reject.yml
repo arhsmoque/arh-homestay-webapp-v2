@@ -1,0 +1,50 @@
+build_now:
+  - visual_north_star
+  - warm_private_retreat_palette
+  - semantic_color_tokens
+  - font_pairing
+  - type_scale
+  - spacing_scale
+  - media_taxonomy
+  - grouped_gallery
+  - Ken_Burns_rules
+  - poster_first_video_rules
+  - component_style_system
+  - sticky_booking_bar_behavior
+  - reduced_motion_rules
+  - accessibility_floor
+  - performance_targets
+  - design_config
+  - media_registry_schema
+  - component_registry
+
+scaffold_now:
+  - set_theme_mode_script
+  - set_font_pairing_script
+  - set_motion_profile_script
+  - validate_media_registry_script
+  - validate_public_style_contract_script
+  - Storybook_style_gallery
+  - component_state_examples
+  - owner_content_adapter_preview
+
+defer:
+  - full_dark_mode_toggle
+  - owner_selectable_theme_builder
+  - seasonal_auto_theme
+  - visual_editor
+  - AI_style_suggestions
+  - 3D_walkthrough_component
+  - full_booking_calendar
+  - payment_checkout_component
+
+reject:
+  - hardcoded_hex_in_components
+  - black_gold_luxury_theme
+  - autoplay_video_grid
+  - scroll_hijacking
+  - hover_only_information
+  - generic_card_for_everything
+  - full_social_feed_embed_above_fold
+  - random_z_index_values
+  - owner_direct_raw_token_editing

@@ -1,0 +1,34 @@
+component_registry:
+  HeroDecisionCard:
+    role: first_screen_property_identity_and_action
+    surfaces: [home, campaign_landing]
+  FastProofStrip:
+    role: compact_key_facts
+    surfaces: [home, stay, event]
+  OccasionFitCard:
+    role: route_visitor_by_use_case
+    surfaces: [home, events]
+  SignaturePoolCard:
+    role: pool_desire_and_proof
+    surfaces: [home, private_pool]
+  SleepSummaryCard:
+    role: overnight_capacity_proof
+    surfaces: [home, stay]
+  CompoundLayoutPreview:
+    role: space_usability_proof
+    surfaces: [home, layout, events]
+  EventSuitabilityCard:
+    role: event_use_case_proof
+    surfaces: [events]
+  GalleryStoryCard:
+    role: grouped_media_story
+    surfaces: [home, gallery]
+  LocationProofCard:
+    role: location_and_arrival_confidence
+    surfaces: [home, location]
+  PackageSummaryCard:
+    role: package_choice_and_rate_expectation
+    surfaces: [home, packages]
+  WhatsappInquiryCard:
+    role: structured_inquiry_conversion
+    surfaces: [book]
